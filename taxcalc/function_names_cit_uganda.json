@@ -1,0 +1,21 @@
+{
+  "0": "Net_accounting_profit",
+  "1": "Total_additions_to_GP",
+  "2": "Init_allow_PM",
+  "3": "Disposal_PM",
+  "4": "Depr_PM",
+  "5": "Cl_WDV_PM",
+  "6": "Init_allow_bld",
+  "7": "Depr_bld",
+  "8": "Cl_bal_bld",
+  "9": "Depr_cap_deductions",
+  "10": "Total_subtractions_from_GP",
+  "11": "Income_Cap_Gains",
+  "12": "Taxable_profit",
+  "13": "BF_loss",
+  "14": "Taxable_profit_after_adjloss",
+  "15": "Net_tax_base_behavior",  
+  "16": "mat_liability",
+  "17": "cit_liability",
+  "18": "Ebdta"
+}

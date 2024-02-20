@@ -1,0 +1,976 @@
+{
+  "read": {
+    "id_n": {
+      "required": true,
+      "type": "int",
+      "desc": "Unique positive numeric identifier for filing unit",
+      "form": {
+        "2021": "private info"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "Year": {
+      "required": true,
+      "type": "int",
+      "desc": "Tax Year",
+      "form": {
+        "2021": "private info"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "sch1_profit_loss_before_tax": {
+      "required": false,
+      "type": "float",
+      "desc": "Profit or Loss before Tax",
+      "form": {
+        "2021": "Sch 1"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    
+    "sch1_tot_amt_added": {
+      "type": "float",
+      "desc": "Amount added to accounting profit",
+      "form": {
+        "2021": "Sch 1"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+     
+    "sch1_add_strt_up_cost": {
+      "type": "float",
+      "desc": "Start up cost amount added to accounting profit",
+      "form": {
+        "2021": "Sch 1"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "gross_add_pm40": {
+      "type": "float",
+      "desc": "Addition to PM",
+      "form": {
+        "2021": "Part 1"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+     "gross_add_pm35": {
+       "type": "float",
+       "desc": "Addition to PM",
+       "form": {
+         "2021": "Part 1"
+       },
+       "cross_year": "No",
+       "attribute": "No"
+     },
+      "gross_add_pm30": {
+        "type": "float",
+        "desc": "Addition to PM",
+        "form": {
+          "2021": "Part 1"
+        },
+        "cross_year": "No",
+        "attribute": "No"
+      },
+       "gross_add_pm20": {
+         "type": "float",
+         "desc": "Addition to PM",
+         "form": {
+           "2021": "Part 1"
+         },
+         "cross_year": "No",
+         "attribute": "No"
+       },
+    "Op_wdv_pm40": {
+      "type": "float",
+      "desc": "Opening WDV for PM",
+      "form": {
+        "2021": "Part 1"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+     "Op_wdv_pm35": {
+       "type": "float",
+       "desc": "Opening WDV for PM",
+       "form": {
+         "2021": "Part 1"
+       },
+       "cross_year": "No",
+       "attribute": "No"
+     },
+      "Op_wdv_pm30": {
+        "type": "float",
+        "desc": "Opening WDV for PM",
+        "form": {
+          "2021": "Part 1"
+        },
+        "cross_year": "No",
+        "attribute": "No"
+      },
+       "Op_wdv_pm20": {
+          "type": "float",
+          "desc": "Opening WDV for PM",
+          "form": {
+            "2021": "Part 1"
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+         "asset_use_ratio": {
+            "type": "float",
+            "desc": "proportion of year for which PM was used",
+            "form": {
+              "2021": "Part 1"
+            },
+            "cross_year": "No",
+            "attribute": "No"
+          },
+           "sch1_add_depreciation": {
+              "type": "float",
+              "desc": "Add depr as per accounting standards",
+              "form": {
+                "2021": "Part 1"
+              },
+              "cross_year": "No",
+              "attribute": "No"
+            },
+                    
+         "sch2_addinit_during_yr_class_40": {
+           "type": "float",
+           "desc": "Addition of asset in PM",
+           "form": {
+             "2021": "Part 1"
+           },
+           "cross_year": "No",
+           "attribute": "No"
+         },
+          "sch2_addinit_during_yr_class_35": {
+            "type": "float",
+            "desc": "Addition of asset in PM",
+            "form": {
+              "2021": "Part 1"
+            },
+            "cross_year": "No",
+            "attribute": "No"
+          },
+           "sch2_addinit_during_yr_class_30": {
+             "type": "float",
+             "desc": "Addition of asset in PM",
+             "form": {
+               "2021": "Part 1"
+             },
+             "cross_year": "No",
+             "attribute": "No"
+           },
+            "sch2_addinit_during_yr_class_20": {
+              "type": "float",
+              "desc": "Addition of asset in PM",
+              "form": {
+                "2021": "Part 1"
+              },
+              "cross_year": "No",
+              "attribute": "No"
+            },
+    "sch2_dispsl_class_40": {
+      "type": "float",
+      "desc": "Disposal of asset in PM",
+      "form": {
+        "2021": "Part 1"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+     "sch2_dispsl_class_35": {
+       "type": "float",
+       "desc": "Disposal of asset in PM",
+       "form": {
+         "2021": "Part 1"
+       },
+       "cross_year": "No",
+       "attribute": "No"
+     },
+      "sch2_dispsl_class_30": {
+        "type": "float",
+        "desc": "Disposal of asset in PM",
+        "form": {
+          "2021": "Part 1"
+        },
+        "cross_year": "No",
+        "attribute": "No"
+      },
+       "sch2_dispsl_class_20": {
+         "type": "float",
+         "desc": "Disposal of asset in PM",
+         "form": {
+           "2021": "Part 1"
+         },
+         "cross_year": "No",
+         "attribute": "No"
+       },
+    "addition_bld": {
+      "type": "float",
+      "desc": "Addition to Buildings Asset class",
+      "form": {
+        "2021": "Part 2"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "Op_bal_bld": {
+      "type": "float",
+      "desc": "Opening balance buildings asset class",
+      "form": {
+        "2021": "Part 2"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "sch1_exmpt_incm_less": {
+      "type": "float",
+      "desc": "Exempt income",
+      "form": {
+        "2021": "Sch 1"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+     "sch1_insurance_incm": {
+       "type": "float",
+       "desc": "Insurance income",
+       "form": {
+         "2021": "Sch 1"
+       },
+       "cross_year": "No",
+       "attribute": "No"
+     },
+     "sch1_mining_incm": {
+       "type": "float",
+       "desc": "Mining income",
+       "form": {
+         "2021": "Sch 1"
+       },
+       "cross_year": "No",
+       "attribute": "No"
+     },
+      "sch1_profit_depreciate_asset": {
+        "type": "float",
+        "desc": "Profit on disposal of asset",
+        "form": {
+          "2021": "Sch 1"
+        },
+        "cross_year": "No",
+        "attribute": "No"
+      },
+       "sch1_capital_deduct": {
+         "type": "float",
+         "desc": "Capital deduction other than mining and insurance",
+         "form": {
+           "2021": "Sch 1"
+         },
+         "cross_year": "No",
+         "attribute": "No"
+       },
+        "sch1_research_expense": {
+          "type": "float",
+          "desc": "Deduction of research expenses",
+          "form": {
+            "2021": "Sch 1"
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "sch1_unreal_forex_less": {
+          "type": "float",
+          "desc": "Unrealised forex loss",
+          "form": {
+            "2021": "Sch 1"
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+         "sch1_total_witheld_incm": {
+           "type": "float",
+           "desc": "Income on which witholding tax is final - interest, dividend",
+           "form": {
+             "2021": "Sch 1"
+           },
+           "cross_year": "No",
+           "attribute": "No"
+         },
+          "sch1_total_othr_allow_ded": {
+            "type": "float",
+            "desc": "Deductions (Other) excluding depreciation, initial allowances, and other capital allowances",
+            "form": {
+              "2021": "Sch 1"
+            },
+            "cross_year": "No",
+            "attribute": "No"
+          },
+           "residual_ded": {
+             "type": "float",
+             "desc": "Deductions - residual after adding all deductions and reducing from total deductions",
+             "form": {
+               "2021": "Sch 1"
+             },
+             "cross_year": "No",
+             "attribute": "No"
+           },
+    "sch1_incm_capital_gain": {
+      "type": "float",
+      "desc": "Income from capital gain",
+      "form": {
+        "2021": "Sch 1"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "sch1_capital_losses": {
+      "type": "float",
+      "desc": "Capital losses",
+      "form": {
+        "2021": "Sch 1"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "sch1_loss_prvs_year": {
+      "type": "float",
+      "desc": "Brought forward loss from previous year",
+      "form": {
+        "2021": "Sch 1"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "sch2_startup_cost": {
+      "type": "float",
+      "desc": "Start up cost",
+      "form": {
+        "2021": "Sch 1"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "sch2_intangible_asset": {
+      "type": "float",
+      "desc": "Start up cost",
+      "form": {
+        "2021": "Sch 1"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+     "sch2_deduction_acquisition": {
+       "type": "float",
+       "desc": "Start up cost",
+       "form": {
+         "2021": "Sch 1"
+       },
+       "cross_year": "No",
+       "attribute": "No"
+     },
+     "Loss_lag1": {
+       "type": "float",
+       "desc": "Loss - previous years",
+       "form": {
+         "2021": "Sch 1"
+       },
+       "cross_year": "No",
+       "attribute": "No"
+     },
+      "Loss_lag2": {
+        "type": "float",
+        "desc": "Loss - previous years",
+        "form": {
+          "2021": "Sch 1"
+        },
+        "cross_year": "No",
+        "attribute": "No"
+      },
+       "Loss_lag3": {
+         "type": "float",
+         "desc": "Loss - previous years",
+         "form": {
+           "2021": "Sch 1"
+         },
+         "cross_year": "No",
+         "attribute": "No"
+       },
+        "Loss_lag4": {
+          "type": "float",
+          "desc": "Loss - previous years",
+          "form": {
+            "2021": "Sch 1"
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+         "Loss_lag5": {
+           "type": "float",
+           "desc": "Loss - previous years",
+           "form": {
+             "2021": "Sch 1"
+           },
+           "cross_year": "No",
+           "attribute": "No"
+         },
+          "Loss_lag6": {
+            "type": "float",
+            "desc": "Loss - previous years",
+            "form": {
+              "2021": "Sch 1"
+            },
+            "cross_year": "No",
+            "attribute": "No"
+          },
+           "Loss_lag7": {
+             "type": "float",
+             "desc": "Loss - previous years",
+             "form": {
+               "2021": "Sch 1"
+             },
+             "cross_year": "No",
+             "attribute": "No"
+           },
+            "Loss_lag8": {
+              "type": "float",
+              "desc": "Loss - previous years",
+              "form": {
+                "2021": "Sch 1"
+              },
+              "cross_year": "No",
+              "attribute": "No"
+            },
+             "Loss_lag9": {
+               "type": "float",
+               "desc": "Loss - previous years",
+               "form": {
+                 "2021": "Sch 1"
+               },
+               "cross_year": "No",
+               "attribute": "No"
+             },
+              "Loss_lag10": {
+                "type": "float",
+                "desc": "Loss - previous years",
+                "form": {
+                  "2021": "Sch 1"
+                },
+                "cross_year": "No",
+                "attribute": "No"
+              },
+               "Loss_lag11": {
+                 "type": "float",
+                 "desc": "Loss - previous years",
+                 "form": {
+                   "2021": "Sch 1"
+                 },
+                 "cross_year": "No",
+                 "attribute": "No"
+               },
+                "Loss_lag12": {
+                  "type": "float",
+                  "desc": "Loss - previous years",
+                  "form": {
+                    "2021": "Sch 1"
+                  },
+                  "cross_year": "No",
+                  "attribute": "No"
+                },
+                 "Loss_lag13": {
+                   "type": "float",
+                   "desc": "Loss - previous years",
+                   "form": {
+                     "2021": "Sch 1"
+                   },
+                   "cross_year": "No",
+                   "attribute": "No"
+                 },
+                  "Loss_lag14": {
+                    "type": "float",
+                    "desc": "Loss - previous years",
+                    "form": {
+                      "2021": "Sch 1"
+                    },
+                    "cross_year": "No",
+                    "attribute": "No"
+                  },
+                   "Loss_lag15": {
+                     "type": "float",
+                     "desc": "Loss - previous years",
+                     "form": {
+                       "2021": "Sch 1"
+                     },
+                     "cross_year": "No",
+                     "attribute": "No"
+                   },
+              "sch4_sch_cntrt_gross_incm": {
+                "type": "float",
+                "desc": "Gross income from long term contract",
+                "form": {
+                  "2021": "Sch 4"
+                },
+                "cross_year": "No",
+                "attribute": "No"
+              },
+           "sch5_net_charge_income": {
+             "type": "float",
+             "desc": "Net income from Mining business",
+             "form": {
+               "2021": "Sch 5"
+             },
+             "cross_year": "No",
+             "attribute": "No"
+           },
+            "sch6_net_inc_short_bsns": {
+              "type": "float",
+              "desc": "Net income from Short term insurance business",
+              "form": {
+                "2021": "Sch 6"
+              },
+              "cross_year": "No",
+              "attribute": "No"
+            }
+  },
+  "calc": {
+    "Net_accounting_profit": {
+      "type": "float",
+      "desc": "computed accounting business profit",
+      "cross_year": "No",
+      "form": {
+        "2021": "Sch 1"
+      }
+    },
+    "Total_additions_to_GP": {
+      "type": "float",
+      "desc": "additions to accounting profit to compute taxable profits",
+      "cross_year": "No",
+      "form": {
+        "2021": "Sch 1" 
+      }
+    },
+    "init_allow_pm40": {
+      "type": "float",
+      "desc": "Initial allowance PM asset class",
+      "cross_year": "No",
+      "form": {
+        "2021": "Item 216 - Tax Return Legal Persons"
+      }
+      },
+      
+    "init_allow_pm35": {
+      "type": "float",
+      "desc": "Initial allowance PM asset class",
+      "cross_year": "No",
+      "form": {
+        "2021": "Item 216 - Tax Return Legal Persons"
+      }
+    },
+    
+    "init_allow_pm30": {
+      "type": "float",
+      "desc": "Initial allowance PM asset class",
+      "cross_year": "No",
+      "form": {
+        "2021": "Item 216 - Tax Return Legal Persons"
+      }
+    },
+    "init_allow_pm20": {
+      "type": "float",
+      "desc": "Initial allowance PM asset class",
+      "cross_year": "No",
+      "form": {
+        "2021": "Item 216 - Tax Return Legal Persons"
+      }
+    },
+     "total_init_allow_pm": {
+       "type": "float",
+       "desc": "Total initial allowance PM asset class",
+       "cross_year": "No",
+       "form": {
+         "2021": "Item 216 - Tax Return Legal Persons"
+       }
+     },
+    "net_add_pm40": {
+      "type": "float",
+      "desc": "Net addition to PM after adjusting initial allowance",
+      "cross_year": "No",
+      "form": {
+        "2021": "Sch 1"
+      }
+    },
+     "net_add_pm35": {
+       "type": "float",
+       "desc": "Net addition to PM after adjusting initial allowance",
+       "cross_year": "No",
+       "form": {
+         "2021": "Sch 1"
+       }
+     },
+      "net_add_pm30": {
+        "type": "float",
+        "desc": "Net addition to PM after adjusting initial allowance",
+        "cross_year": "No",
+        "form": {
+          "2021": "Sch 1"
+        }
+      },
+       "net_add_pm20": {
+         "type": "float",
+         "desc": "Net addition to PM after adjusting initial allowance",
+         "cross_year": "No",
+         "form": {
+           "2021": "Sch 1"
+         }
+       },
+        "disp_pm40": {
+          "type": "float",
+          "desc": "Disposal of PM",
+          "cross_year": "No",
+          "form": {
+            "2021": "Sch 1"
+          }
+        },
+         "disp_pm35": {
+           "type": "float",
+           "desc": "Disposal of PM",
+           "cross_year": "No",
+           "form": {
+             "2021": "Sch 1"
+           }
+         },
+          "disp_pm30": {
+            "type": "float",
+            "desc": "Disposal of PM",
+            "cross_year": "No",
+            "form": {
+              "2021": "Sch 1"
+            }
+          },
+           "disp_pm20": {
+             "type": "float",
+             "desc": "Disposal of PM",
+             "cross_year": "No",
+             "form": {
+               "2021": "Sch 1"
+             }
+           },
+            "depr_pm40": {
+              "type": "float",
+              "desc": "Depreciation on PM",
+              "cross_year": "No",
+              "form": {
+                "2021": "Sch 1"
+              }
+            },
+             "depr_pm35": {
+               "type": "float",
+               "desc": "Depreciation on PM",
+               "cross_year": "No",
+               "form": {
+                 "2021": "Sch 1"
+               }
+             },
+              "depr_pm30": {
+                "type": "float",
+                "desc": "Depreciation on PM",
+                "cross_year": "No",
+                "form": {
+                  "2021": "Sch 1"
+                }
+              },
+               "depr_pm20": {
+                 "type": "float",
+                 "desc": "Depreciation on PM",
+                 "cross_year": "No",
+                 "form": {
+                   "2021": "Sch 1"
+                 }
+               },
+                "total_depr_pm": {
+                  "type": "float",
+                  "desc": "Total depreciation on PM",
+                  "cross_year": "No",
+                  "form": {
+                    "2021": "Sch 1"
+                  }
+                },
+    "Cl_wdv_pm40": {
+      "type": "float",
+      "desc": "Closing WDV PM ",
+      "cross_year": "Yes",
+      "form": {
+        "2021": "Sch 1"
+      }
+    },
+     "Cl_wdv_pm35": {
+       "type": "float",
+       "desc": "Closing WDV PM ",
+        "cross_year": "Yes",
+       "form": {
+         "2021": "Sch 1"
+       }
+     },
+      "Cl_wdv_pm30": {
+        "type": "float",
+        "desc": "Closing WDV PM ",
+         "cross_year": "Yes",
+        "form": {
+          "2021": "Sch 1"
+        }
+      },
+       "Cl_wdv_pm20": {
+         "type": "float",
+         "desc": "Closing WDV PM ",
+          "cross_year": "Yes",
+         "form": {
+           "2021": "Sch 1"
+         }
+       },
+    "init_allow_bld": {
+      "type": "float",
+      "desc": "Initial allowance - Buildings",
+      "cross_year": "No",
+      "form": {
+        "2021": "Sch 1"
+      }
+    },
+     "depr_bld": {
+       "type": "float",
+       "desc": "Depreciation - Buildings",
+       "cross_year": "No",
+       "form": {
+         "2021": "Sch 1"
+       }
+     },
+     "Cl_bal_bld": {
+       "type": "float",
+       "desc": "Closing balance - Buildings",
+        "cross_year": "Yes",
+       "form": {
+         "2021": "Sch 1"
+       }
+     },
+     
+    "depr_cap_allow": {
+      "type": "float",
+      "desc": "Depreciation and other allowances",
+      "cross_year": "No",
+      "form": {
+        "2021": "Sch 1"
+      }
+    },
+    "Total_subtractions_from_GP": {
+      "type": "float",
+      "desc": "Total deductions and allowances from Adjusted net accounting profit",
+      "cross_year": "No",
+      "form": {
+        "2021": "Sch 1"
+      }
+    },
+    "income_capgains": {
+      "type": "float",
+      "desc": "Income from capital gains",
+      "cross_year": "No",
+      "form": {
+        "2021": "Sch 1"
+      }
+    },
+     "taxable_profit": {
+       "type": "float",
+       "desc": "Taxable profit after deductions but before loss adjustment",
+       "cross_year": "No",
+       "form": {
+         "2021": "Sch 1"
+       }
+     },
+      "bf_loss": {
+        "type": "float",
+        "desc": "Brought forward loss from previous year",
+        "cross_year": "No",
+        "form": {
+          "2021": "Sch 1"
+        },
+        "cross_year": "No",
+        "attribute": "No"
+      },
+       "taxbase_post_loss": {
+         "type": "float",
+         "desc": "Taxable profit after loss adjustment",
+         "cross_year": "No",
+         "form": {
+           "2021": "Sch 1"
+         },
+         "cross_year": "No",
+         "attribute": "No"
+       },
+    
+    "net_tax_base_behavior": {
+      "type": "float",
+      "desc": "Taxable Income after allowing for behavioral effect",
+      "cross_year": "No",
+      "form": {
+        "2021": "Sch 1"
+      }
+    },
+   
+    "citax": {
+      "type": "float",
+      "desc": "tax due on net tax base",
+      "cross_year": "No",
+      "form": {
+        "2021": "Section C"
+      }
+    },
+    "newloss1": {
+      "type": "float",
+      "desc": "Carried forward loss - one years old",
+      "cross_year": "No",
+      "form": {
+        "2021": "Tax Return Non Individual"
+      }
+    },
+    "newloss2": {
+      "type": "float",
+      "desc": "Carried forward loss - two years old",
+      "cross_year": "No",
+      "form": {
+        "2021": "Tax Return Non Individual"
+      }
+    },
+    "newloss3": {
+      "type": "float",
+      "desc": "Carried forward loss - three years old",
+      "cross_year": "No",
+      "form": {
+        "2021": "Tax Return Non Individual"
+      }
+    },
+    "newloss4": {
+      "type": "float",
+      "desc": "Carried forward loss - four years old",
+      "cross_year": "No",
+      "form": {
+        "2021": "Tax Return Non Individual"
+      }
+    },
+    "newloss5": {
+      "type": "float",
+      "desc": "Carried forward loss - five years old",
+      "cross_year": "No",
+      "form": {
+        "2021": "Tax Return Non Individual"
+      }
+    },
+    "newloss6": {
+      "type": "float",
+      "desc": "Carried forward loss - six years old",
+      "cross_year": "No",
+      "form": {
+        "2021": "Tax Return Non Individual"
+      }
+    },
+    "newloss7": {
+      "type": "float",
+      "desc": "Carried forward loss - seven years old",
+      "cross_year": "No",
+      "form": {
+        "2021": "Tax Return Non Individual"
+      }
+    },
+    "newloss8": {
+      "type": "float",
+      "desc": "Carried forward loss - eight years old",
+      "cross_year": "No",
+      "form": {
+        "2021": "Tax Return Non Individual"
+      }
+    },
+    "newloss9": {
+      "type": "float",
+      "desc": "Carried forward loss - nine years old",
+      "cross_year": "No",
+      "form": {
+        "2021": "Tax Return Non Individual"
+      }
+    },
+    "newloss10": {
+      "type": "float",
+      "desc": "Carried forward loss - ten years old",
+      "cross_year": "No",
+      "form": {
+        "2021": "Tax Return Non Individual"
+      }
+    },
+    "newloss11": {
+      "type": "float",
+      "desc": "Carried forward loss - ten years old",
+      "cross_year": "No",
+      "form": {
+        "2021": "Tax Return Non Individual"
+      }
+    },
+    "newloss12": {
+      "type": "float",
+      "desc": "Carried forward loss - ten years old",
+      "cross_year": "No",
+      "form": {
+        "2021": "Tax Return Non Individual"
+      }
+    },
+    "newloss13": {
+      "type": "float",
+      "desc": "Carried forward loss - ten years old",
+      "cross_year": "No",
+      "form": {
+        "2021": "Tax Return Non Individual"
+      }
+    },
+    "newloss14": {
+      "type": "float",
+      "desc": "Carried forward loss - ten years old",
+      "cross_year": "No",
+      "form": {
+        "2021": "Tax Return Non Individual"
+      }
+    },
+     "newloss15": {
+       "type": "float",
+       "desc": "Carried forward loss - ten years old",
+       "cross_year": "No",
+       "form": {
+         "2021": "Tax Return Non Individual"
+       }
+     },
+    "Used_loss_total": {
+      "type": "float",
+      "desc": "Used loss out of brought forward losses or loss lag 1 to 10",
+      "cross_year": "No",
+      "form": {
+        "2021": "Tax Return Non Individual"
+      }
+    },
+     "ebdta": {
+       "type": "float",
+       "desc": "Earnings before Depr and Tax for ETR purpose",
+       "cross_year": "No",
+       "form": {
+         "2021": "Tax Return Non Individual"
+       }
+     },
+       "MAT": {
+       "type": "float",
+       "desc": "Minimum Alternative Tax",
+       "cross_year": "No",
+       "form": {
+         "2021": "New"
+          }
+        }          
+  }
+}

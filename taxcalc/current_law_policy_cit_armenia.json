@@ -1,0 +1,641 @@
+{
+    "_cit_tax_rate": {
+        "long_name": " ",
+        "description": " ",
+        "itr_ref": " ",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [0.18],
+        "range": {
+            "min": 0.0,
+            "max": 1.0
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_depr_prop_rate": {
+        "long_name": " ",
+        "description": " ",
+        "itr_ref": " ",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [0.17],
+        "range": {
+            "min": 0.0,
+            "max": 1.0
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_depr_int_rate": {
+        "long_name": " ",
+        "description": " ",
+        "itr_ref": " ",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [0.24],
+        "range": {
+            "min": 0.0,
+            "max": 1.0
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_toggle_o_pay_value_of_assets": {
+        "long_name": " ",
+        "description": " ",
+        "itr_ref": " ",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [1],
+        "range": {
+            "min": 0,
+            "max": 1
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_toggle_o_pay": {
+        "long_name": " ",
+        "description": " ",
+        "itr_ref": " ",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [1],
+        "range": {
+            "min": 0,
+            "max": 1
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_toggle_calc_total_ded": {
+        "long_name": " ",
+        "description": " ",
+        "itr_ref": " ",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [1],
+        "range": {
+            "min": 0,
+            "max": 1
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_toggle_ded_total_licensing": {
+        "long_name": " ",
+        "description": " ",
+        "itr_ref": " ",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [1],
+        "range": {
+            "min": 0,
+            "max": 1
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_toggle_ded_total_joint_act": {
+        "long_name": " ",
+        "description": " ",
+        "itr_ref": " ",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [1],
+        "range": {
+            "min": 0,
+            "max": 1
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_toggle_ded_tot_org_prod_border": {
+        "long_name": " ",
+        "description": " ",
+        "itr_ref": " ",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [1],
+        "range": {
+            "min": 0,
+            "max": 1
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_toggle_incentives_tax_reduction": {
+        "long_name": " ",
+        "description": " ",
+        "itr_ref": " ",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [1],
+        "range": {
+            "min": 0,
+            "max": 1
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_toggle_profit_tax_reduction_projects": {
+        "long_name": " ",
+        "description": " ",
+        "itr_ref": " ",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [1],
+        "range": {
+            "min": 0,
+            "max": 1
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_toggle_profit_tax_reduction_citizens": {
+        "long_name": " ",
+        "description": " ",
+        "itr_ref": " ",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [1],
+        "range": {
+            "min": 0,
+            "max": 1
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    
+     "_tax_rate_comm_q": {
+        "long_name": "income from commercial (purchase and sale) activities",
+        "description": "Turnover Tax ",
+        "itr_ref": "Tax Law",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [0.05],
+        "range": {
+            "min": 0.0,
+            "max": 1.0
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_rate_exp_ded_tax_calc": {
+       "long_name": "5.5 Rate for the amount of the cost of acquisition of goods for the calculation of the amount deductible from tax amount ",
+       "description": "Turnover Tax ",
+       "itr_ref": "Tax Law",
+       "notes": "",
+       "row_var": "Year",
+       "row_label": [
+           "2022"
+       ],
+       "start_year": 2022,
+       "cpi_inflatable": false,
+       "cpi_inflated": false,
+       "col_var": "Value",
+       "col_label": ["Value"],
+       "boolean_value": false,
+       "integer_value": false,
+       "value": [0.04],
+       "range": {
+           "min": 0.0,
+           "max": 1.0
+       },
+       "out_of_range_minmsg": "",
+       "out_of_range_maxmsg": "",
+       "out_of_range_action": "stop"
+   },
+     "_tax_rate_pub_cater_q": {
+        "long_name": "6.2. Tax rate on income from activities in the field of public catering",
+        "description": "Turnover Tax ",
+        "itr_ref": "Tax Law",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [0.06],
+        "range": {
+            "min": 0.0,
+            "max": 1.0
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_to_rate": {
+       "long_name": "Tax Rate ",
+       "description": "Turnover Tax ",
+       "itr_ref": "Tax Law",
+       "notes": "",
+       "row_var": "Year",
+       "row_label": [
+           "2022"
+       ],
+       "start_year": 2022,
+       "cpi_inflatable": false,
+       "cpi_inflated": false,
+       "col_var": "Value",
+       "col_label": ["Value"],
+       "boolean_value": false,
+       "integer_value": false,
+       "value": [0.015],
+       "range": {
+           "min": 0.0,
+           "max": 1.0
+       },
+       "out_of_range_minmsg": "",
+       "out_of_range_maxmsg": "",
+       "out_of_range_action": "stop"
+   },
+     "_to_rate_1": {
+        "long_name": "Tax Rate  1",
+        "description": "Turnover Tax ",
+        "itr_ref": "Tax Law",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [0.015],
+        "range": {
+            "min": 0.0,
+            "max": 1.0
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+     "_to_rate_2": {
+        "long_name": "Tax Rate  1",
+        "description": "Turnover Tax ",
+        "itr_ref": "Tax Law",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [0.035],
+        "range": {
+            "min": 0.0,
+            "max": 1.0
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+     "_to_rate_3": {
+        "long_name": "Tax Rate  3",
+        "description": "Turnover Tax ",
+        "itr_ref": "Tax Law",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [0.1],
+        "range": {
+            "min": 0.0,
+            "max": 1.0
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_to_rate_4": {
+       "long_name": "Tax Rate  4",
+       "description": "Turnover Tax ",
+       "itr_ref": "Tax Law",
+       "notes": "",
+       "row_var": "Year",
+       "row_label": [
+           "2022"
+       ],
+       "start_year": 2022,
+       "cpi_inflatable": false,
+       "cpi_inflated": false,
+       "col_var": "Value",
+       "col_label": ["Value"],
+       "boolean_value": false,
+       "integer_value": false,
+       "value": [0.10],
+       "range": {
+           "min": 0.0,
+           "max": 1.0
+       },
+       "out_of_range_minmsg": "",
+       "out_of_range_maxmsg": "",
+       "out_of_range_action": "stop"
+   },
+"_to_rate_5": {
+    "long_name": "Tax Rate  5",
+    "description": "Turnover Tax ",
+    "itr_ref": "Tax Law",
+    "notes": "",
+    "row_var": "Year",
+    "row_label": [
+        "2022"
+    ],
+    "start_year": 2022,
+    "cpi_inflatable": false,
+    "cpi_inflated": false,
+    "col_var": "Value",
+    "col_label": ["Value"],
+    "boolean_value": false,
+    "integer_value": false,
+    "value": [0.25],
+    "range": {
+        "min": 0.0,
+        "max": 1.0
+    },
+    "out_of_range_minmsg": "",
+    "out_of_range_maxmsg": "",
+    "out_of_range_action": "stop"
+},
+"_to_rate_6": {
+    "long_name": "Tax Rate  6",
+    "description": "Turnover Tax ",
+    "itr_ref": "Tax Law",
+    "notes": "",
+    "row_var": "Year",
+    "row_label": [
+        "2022"
+    ],
+    "start_year": 2022,
+    "cpi_inflatable": false,
+    "cpi_inflated": false,
+    "col_var": "Value",
+    "col_label": ["Value"],
+    "boolean_value": false,
+    "integer_value": false,
+    "value": [0.20],
+    "range": {
+        "min": 0.0,
+        "max": 1.0
+    },
+    "out_of_range_minmsg": "",
+    "out_of_range_maxmsg": "",
+    "out_of_range_action": "stop"
+},
+"_to_rate_7": {
+    "long_name": "Tax Rate  7",
+    "description": "Turnover Tax ",
+    "itr_ref": "Tax Law",
+    "notes": "",
+    "row_var": "Year",
+    "row_label": [
+        "2022"
+    ],
+    "start_year": 2022,
+    "cpi_inflatable": false,
+    "cpi_inflated": false,
+    "col_var": "Value",
+    "col_label": ["Value"],
+    "boolean_value": false,
+    "integer_value": false,
+    "value": [0.05],
+    "range": {
+        "min": 0.0,
+        "max": 1.0
+    },
+    "out_of_range_minmsg": "",
+    "out_of_range_maxmsg": "",
+    "out_of_range_action": "stop"
+},
+  
+"_elasticity_cit_taxable_income_value": {
+        "long_name": "Elasticity of Taxable Income",
+        "description": "elasticity",
+        "itr_ref": "elasticity",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+                "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Elasticity",
+        "col_label": "",
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [      
+                [0.0,
+                0.0,
+                0.0]
+      ],
+        "range": {
+            "min": 0,
+            "max": 1
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+"_elasticity_cit_taxable_income_threshold": {
+        "long_name": "Elasticity of Taxable Income",
+        "description": "elasticity",
+        "itr_ref": "elasticity",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+                100000,
+                1000000,
+                9e99
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Elasticity",
+        "col_label": "",
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [      
+                [
+                100000,
+                1000000,
+                9e99
+                ]
+      ],
+        "range": {
+            "min": 0,
+            "max": 9e99
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    } 
+}

@@ -1,0 +1,16 @@
+
+
+{
+    "policy": {
+    "_rate_personal_allowance_w": {"2018": [0.0]},
+    "_rate_ded_income_agr_med_l": {"2018": [0.0]},
+    "_rate_income_sculpture_c": {"2018": [0.0]},
+    "_rate_income_artistic_photography_c": {"2018": [0.0]},
+    "_rate_income_paintings_c": {"2018": [0.0]},
+    "_rate_income_music_ballet_c": {"2018": [0.0]},
+    "_rate_income_translations_lectures_c": {"2018": [0.0]},
+    "_rate_income_stage_music_c": {"2018": [0.0]},
+    "_rate_income_copyrights_other_c": {"2018": [0.0]},
+    "_rate_income_claimed_other_c": {"2018": [0.0]}
+    }
+}

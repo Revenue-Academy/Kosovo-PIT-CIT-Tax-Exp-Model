@@ -1,0 +1,1186 @@
+{
+	"read": {
+		"id_n": {
+			"required": true,
+			"type": "int",
+			"desc": "Unique positive numeric identifier for filing unit",
+			"form": {
+				"2021": "Private Info"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"Year": {
+			"required": true,
+			"type": "int",
+			"desc": "Assessment Year",
+			"form": {
+				"2021": "private info"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"salary": {
+			"type": "float",
+			"desc": "Gross income salary",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"civil_contract": {
+			"type": "float",
+			"desc": "Gross income from civil contracts ",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"other_income": {
+			"type": "float",
+			"desc": "Gross income from other sources",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"deduction": {
+			"type": "float",
+			"desc": "Deductions by Armenia laws",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"base_social": {
+			"type": "float",
+			"desc": "Deductions by Armenia laws",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"social_fee": {
+			"type": "float",
+			"desc": "Social security contributions",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+
+		},
+		"royalty_resident": {
+			"type": "float",
+			"desc": "Royalty-RA resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"royalty_non_resident": {
+			"type": "float",
+			"desc": "Royalty-Non-Resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"interest_resident": {
+			"type": "float",
+			"desc": "Interest-RA resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"interest_non_resident": {
+			"type": "float",
+			"desc": "Interest-Non-Resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"gaining_resident": {
+			"type": "float",
+			"desc": "Gaining-RA resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"gaining_non_resident": {
+			"type": "float",
+			"desc": "Gaining-Non-Resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"prize_resident": {
+			"type": "float",
+			"desc": "Prize-RA resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"prize_non_resident": {
+			"type": "float",
+			"desc": "Prize-Non-Resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"donation_resident": {
+			"type": "float",
+			"desc": "Donation-RA resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"donation_non_resident": {
+			"type": "float",
+			"desc": "Donation-Non-Resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"alienation_property_dev_resident": {
+			"type": "float",
+			"desc": "Insurance compensation-RA resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"alienation_property_dev_non_resident": {
+			"type": "float",
+			"desc": "Insurance compensation-Non-Resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"alienation_prop_resident": {
+			"type": "float",
+			"desc": "Income from alienation of property-RA resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"alienation_prop_non_resident": {
+			"type": "float",
+			"desc": "Income from alienation of property-Non-Resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"additional_value_prop_resident": {
+			"type": "float",
+			"desc": "Additional increase in the value of the property-RA resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"additional_value_prop_non_resident": {
+			"type": "float",
+			"desc": "Additional increase in the value of the property-Non-Resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"rent_resident": {
+			"type": "float",
+			"desc": "Rent-RA resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"rent_non_resident": {
+			"type": "float",
+			"desc": "Rent-Non-Resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"dividends_resident": {
+			"type": "float",
+			"desc": "Dividends-RA resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"dividends_non_resident": {
+			"type": "float",
+			"desc": "Dividends-Non-Resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"insurance_premium_resident": {
+			"type": "float",
+			"desc": "Insurance premium for physical persons-RA resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"insurance_premium_non_resident": {
+			"type": "float",
+			"desc": "Insurance premium for physical persons-Non-Resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"voluntary_pensions_resident": {
+			"type": "float",
+			"desc": "Voluntary pensions-RA resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"voluntary_pensions_non_resident": {
+			"type": "float",
+			"desc": "Voluntary pensions-Non-Resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"unjustified_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"unjustified_non_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"unpaid_passive_12_month_resident": {
+			"type": "float",
+			"desc": "Unpaid passive income during the 12-month period following the year in which the reduction was made-RA resident ",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"unpaid_passive_12_month_non_resident": {
+			"type": "float",
+			"desc": "Unpaid passive income during the 12-month period following the year in which the reduction was made-Non-Resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"foreign_citizen_stateless_person_resident": {
+			"type": "float",
+			"desc": "Income calculated for the performance of work under the employment contract of a foreign citizen or a stateless person who does not have residence status in the Republic of Armenia-RA resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"foreign_citizen_stateless_person_non_resident": {
+			"type": "float",
+			"desc": "Income calculated for the performance of work under the employment contract of a foreign citizen or a stateless person who does not have residence status in the Republic of Armenia-Non-Resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"other_income_passive_resident": {
+			"type": "float",
+			"desc": "Other income-RA resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"other_income_passive_non_resident": {
+			"type": "float",
+			"desc": "Other income-Non-Resident",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"rent_high": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"stocks": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"mortgage_credits": {
+			"type": "float",
+			"desc": "Cashback of mortgage",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"prop_value": {
+			"type": "float",
+			"desc": "Proporty value ceiling to obtain on mortgage",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"total_income": {
+			"type": "float",
+			"desc": "Proporty value ceiling to obtain on mortgage",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"Total_tax": {
+			"type": "float",
+			"desc": "Proporty value ceiling to obtain on mortgage",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"IT_sector": {
+			"type": "int",
+			"desc": "Variable for IT_SECTOR ",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"sector_num": {
+			"type": "int",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"IT_incentive": {
+			"type": "int",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"mortgage_credits_2022": {
+			"type": "float",
+			"desc": "Cashback of mortgage",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"mortgage_credits_2023": {
+			"type": "float",
+			"desc": "Cashback of mortgage",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"mortgage_credits_2024": {
+			"type": "float",
+			"desc": "Cashback of mortgage",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"mortgage_credits_2025": {
+			"type": "float",
+			"desc": "Cashback of mortgage",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"mortgage_credits_2026": {
+			"type": "float",
+			"desc": "Cashback of mortgage",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		},
+		"mortgage_credits_2027": {
+			"type": "float",
+			"desc": "Cashback of mortgage",
+			"form": {
+				"2021": "pit_armenia"
+			},
+			"cross_year": "No",
+			"attribute": "No"
+		}
+	},
+	"calc": {
+		"max_annual_income_low_ssc": {
+			"type": "float",
+			"desc": "Maximum annual wage for low rate of social security contribution",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"max_annual_income_ssc": {
+			"type": "float",
+			"desc": "Maximum annual wage (cap) for social security",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"sstax": {
+			"type": "float",
+			"desc": "Calculated Social Security Contributions ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_wages": {
+			"type": "float",
+			"desc": "Calculated taxable income from wages",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_royalty_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_royalty_non_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_interest_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_interest_non_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_gaining_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_gaining_non_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_prize_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_prize_non_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_donation_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_donation_non_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_alienation_property_dev_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_alienation_property_dev_non_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_alienation_prop_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_alienation_prop_non_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_additional_value_prop_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_additional_value_prop_non_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_rent_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_rent_non_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_dividends_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+
+		"tti_dividends_non_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_insurance_premium_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_insurance_premium_non_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_voluntary_pensions_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_voluntary_pensions_non_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+
+		"tti_unpaid_passive_12_month_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_unpaid_passive_12_month_non_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_foreign_citizen_stateless_person_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_foreign_citizen_stateless_person_non_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_other_income_passive_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_other_income_passive_non_resident": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_rent_high": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_stocks": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_all": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"total_gross_income": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_wages": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_royalty": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_interest": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_gaining": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_prize": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_donation": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_alienation_property_dev": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_alienation_prop": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_additional_value_prop": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_rent": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_dividends": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_insurance_premium": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_voluntary_pensions": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_unpaid_passive_12_month": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_foreign_citizen_stateless_person": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_other_income_passive": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_rent_high": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_stocks": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_sale_prop": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_sale_prop_dev": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pitax_all": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_wages_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_royalty_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_royalty_non_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_interest_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_interest_non_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_gaining_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_gaining_non_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_prize_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_prize_non_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_donation_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_donation_non_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_insurance_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_insurance_non_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_alienation_prop_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_alienation_prop_non_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_additional_value_prop_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_additional_value_prop_non_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_rent_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_rent_non_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_dividends_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_dividends_non_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_insurance_premium_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_insurance_premium_non_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_voluntary_pensions_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_voluntary_pensions_non_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_unpaid_passive_12_month_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_unpaid_passive_12_month_non_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_citizen_stateless_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_citizen_stateless_non_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_other_income_passive_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_other_income_passive_non_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_rate_rent_high_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_stocks_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"tti_c_sale_prop_resident_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+
+		"pit_c_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+		"pit_w_behavior": {
+			"type": "float",
+			"desc": " ",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		},
+				"pitax_before_credits": {
+        			"type": "float",
+        			"desc": "PIT before tax credits",
+        			"form": {
+        				"2021": "pit_armenia"
+        			}
+        		},
+		"pitax": {
+			"type": "float",
+			"desc": "Total tax without behavioral response",
+			"form": {
+				"2021": "pit_armenia"
+			}
+		}
+	}
+}

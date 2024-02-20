@@ -1,0 +1,2537 @@
+{
+  "read": {
+    "id_n": {
+      "required": true,
+      "type": "int",
+      "desc": "Unique positive numeric identifier for filing unit",
+      "form": {
+        "2022": "private info"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "Year": {
+      "required": true,
+      "type": "int",
+      "desc": "Tax Year",
+      "form": {
+        "2022": "private info"
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "TypeOfTax": {
+      "type": "int",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_supply": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_product": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_work": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_service": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_freight": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_transactions": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_disposal_fixed": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_disposal_intangible": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_disposal_other": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_dividends": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_interest_loans": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+"inc_interest_borrowings": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+	"inc_interest_lease": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+	"inc_operating": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+	"inc_royalties": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+	"inc_granted_funds": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+		"inc_granted_land": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+			"inc_other_granted": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+	"inc_forfeited_court": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+		"inc_forfeited_other": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+			"inc_excess": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+				"inc_received_discount": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+	"inc_insurance": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+		"inc_compensation": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+	"inc_penalties": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+		"inc_recalculation": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+			"inc_credit_debts": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+				"inc_repayments_bad_debts": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+	"inc_accrued": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+	"inc_banks": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_not_written": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+		"inc_recognized": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+	"inc_commissions": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+		"inc_settlement": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+			"inc_VAT": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+				"inc_other": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+					"inc_total": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+						"inc_licensing": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+	"inc_joint": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+	"inc_border": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_supplied_goods": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_production_goods": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_work": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_service": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_mediation": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_disposed_fixed_assets": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_disposed_intangible_assets": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_disposed_other": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_administrative": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_out_territory": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_in_territory": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_rep_costs": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_management_fee": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_consulting": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_IT": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_commercial": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_advertising": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_marketing": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_non_production": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_fin_interest_banking": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_fin_interest_lending": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_fin_interest_non_banking": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_charity": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_insurance_reinsurance": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_rent_easement": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_compensation": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_penalties": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_non_expuctible_taxes": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_expunction_VAT": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_other": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_total": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "loss_natural": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "loss_quality": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+     "loss_accidental": {
+       "type": "float",
+       "desc": " ",
+       "form": {
+         "2022": " "
+       },
+       "cross_year": "No",
+       "attribute": "No"
+     },
+     "loss_other": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+              "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+          },
+        "loss_total": {
+                      "type": "float",
+                      "desc": " ",
+                      "form": {
+                        "2022": " "
+                      },
+                      "cross_year": "No",
+                      "attribute": "No"
+                    },
+    "o_pay_invalid": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "o_pay_bad_debt": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+     "o_pay_bad_debt_excess": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "o_pay_repaying": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "o_pay_possible_loss": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "o_pay_insurance_reinsurance": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "o_pay_technical_reserve": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "o_pay_loss_counterfeit": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "o_pay_tax_loss": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "o_pay_value_of_assets": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "o_pay_150_percent": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "o_pay_derivative_settlement": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "o_pay_resident_dividends": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "o_pay_voluntary_pension": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "o_pay_other": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "o_pay_total": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "ded_total": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "ded_total_licensing": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "ded_total_joint_activities": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "ded_total_org_production_border": {
+          "type": "float",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+
+    "taxable_profit_loss": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+     "incentives_tax_reduction": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "taxable_profit_with_incentives": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "profit_tax_reduction_projects": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "profit_tax_reduction_citizens": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "income_tax_ded": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "profit_tax_after_ded": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "foreign_tax_ded_previous": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "foreign_tax_ded_reporting": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "reduced_income_foreign_profits": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "tax_foreign_profits_carried_over": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "profit_tax_withheld_tax_agent": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "profit_tax_after_deductions": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "profit_tax_non_attributable": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "total_profit_tax": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "total_advance_pay": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "profit_tax_after_ded_adv_pay": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "min_profit_tax_not_ded": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "profit_tax_payable": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+     "min_inc_tax_carried_over": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "profit_tax_reimbursed_budget": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "profit_tax_private_entrepreneurs": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_001_ins_ben": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_002_reins_premiums": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_003_rev_trans": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_004_div": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_005_interests": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_006_royalties": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_007_rental_fees": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_008_inc_value_assets": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_009_inc_value_assets_sale_securities": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_010_div_received_pan_armenian": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_099_other_revenues_RA": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_total_0": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_001_ins_ben_1": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_002_reins_premiums_1": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_003_rev_trans_1": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_004_div_1": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_005_interests_1": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_006_royalties_1": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_007_rental_fees_1": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_008_inc_value_assets_1": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_009_inc_value_assets_sale_securities_1": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_010_div_received_pan_armenian_bank_1": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_099_other_revenues_RA_1": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_total_1": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    
+     "inc_001_ins_ben_2": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_002_reins_premiums_2": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_003_rev_trans_2": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_004_div_2": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_005_interests_2": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_006_royalties_2": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_007_rental_fees_2": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_008_inc_value_assets_2": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_009_inc_value_assets_sale_securities_2": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_010_div_received_pan_armenian_bank_2": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_099_other_revenues_RA_2": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_total_2": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_001_ins_ben_3": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_002_reins_premiums_3": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_003_rev_trans_freight_3": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_004_div_3": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_005_interests_3": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_006_royalties_3": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_007_rental_fees_3": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_008_inc_value_assets_3": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_009_inc_value_assets_sale_securities_3": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_10_div_received_pan_armenian_bank_3": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_099_other_revenues_RA_3": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "inc_total_3": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "total_profit_tax_amount_calc": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "rev_comm_q": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "tax_calc_comm_q": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_purchase_q": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "amount_ded_tax_q": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "unded_trans_tax_prev_q": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "total_ded_tax_q": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "min_tax_q_1_5pct": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "tax_payable_calc_q": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "unded_trans_tax_next_q_purchase": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "rev_pub_cater_q": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "tax_calc_pub_cater_q": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "exp_activities_pub_cater_q": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "rate_exp_ded_tax_calc_pub_cater": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "amount_ded_tax_q_1": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "min_tax_accounting_q_4pct": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "tax_payable_calc_q_1": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_income": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_tax_amount": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_income_1": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_tax_amount_1": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_income_2": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_tax_amount_2": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_income_3": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_tax_amount_3": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_income_4": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_tax_amount_4": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_income_5": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_tax_amount_5": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_income_6": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_tax_amount_6": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_income_7": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_tax_amount_7": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_income_8": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_tax_amount_8": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_income_9": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_tax_amount_9": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_income_10": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "to_tax_amount_10": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "rev_articles_19_7_19_8": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "rev_turn_tax_priv_retail_sales_population": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "rev_sale_prod_org_turn_tax_priv_border_sett": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "rev_act_public_catering_turn_tax_priv_border_sett": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+    "sales_turn_rev_all_act": {
+      "type": "float",
+      "desc": " ",
+      "form": {
+        "2022": " "
+      },
+      "cross_year": "No",
+      "attribute": "No"
+    },
+     "sector": {
+          "type": "string",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "ab_fs_prop_jan1": {
+          "type": "float",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "ab_in_fs_prop": {
+          "type": "float",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "ab_out_fs_prop": {
+          "type": "float",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "ab_fs_prop_dec31": {
+          "type": "float",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "ab_tx_prop_jan1": {
+          "type": "float",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "ab_in_tx_prop": {
+          "type": "float",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "ab_out_tx_prop": {
+          "type": "float",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "ab_tx_prop_dec31": {
+          "type": "float",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "ab_fs_int_assets_jan1": {
+          "type": "float",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "ab_in_fs_int_assets": {
+          "type": "float",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "ab_out_fs_int_assets": {
+          "type": "float",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "ab_fs_int_assets_dec31": {
+          "type": "float",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "ab_tx_int_assets_jan1": {
+          "type": "float",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "ab_in_tx_int_assets": {
+          "type": "float",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "ab_out_tx_int_assets": {
+          "type": "float",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "ab_tx_int_assets_dec31": {
+          "type": "float",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "sector_short": {
+          "type": "string",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+        "sec_desc": {
+          "type": "string",
+          "desc": " ",
+          "form": {
+            "2022": " "
+          },
+          "cross_year": "No",
+          "attribute": "No"
+        },
+            "region": {
+              "type": "string",
+              "desc": " ",
+              "form": {
+                "2022": " "
+              },
+              "cross_year": "No",
+              "attribute": "No"
+            }    
+  },
+  "calc": {
+     "calc_income": {
+       "type": "float",
+       "desc": " ",
+       "cross_year": "",
+       "form": {
+         "2022": ""
+          }
+        },   
+    "calc_exp": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_loss": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_dep": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_o_pay_other": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+    
+  },
+  "calc_other_pay": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_o_pay_value_of_assets": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+    "calc_o_pay_150_percent": {
+      "type": "float",
+      "desc": " ",
+      "cross_year": "",
+      "form": {
+        "2022": ""
+      }
+    }, 
+  "calc_total_ded": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+   "calc_ded_total_licensing": {
+     "type": "float",
+     "desc": " ",
+     "cross_year": "",
+     "form": {
+       "2022": ""
+     }
+   },
+   "calc_ded_total_org_production_border": {
+         "type": "float",
+         "desc": " ",
+         "cross_year": "",
+         "form": {
+           "2022": ""
+         }
+       },
+       
+     "calc_incentives_tax_reduction": {
+                "type": "float",
+                "desc": " ",
+                "cross_year": "",
+                "form": {
+                  "2022": ""
+                }
+              },
+    "calc_ded_total_joint_act": {
+      "type": "float",
+      "desc": " ",
+      "cross_year": "",
+      "form": {
+        "2022": ""
+      }
+    },
+    "calc_profit_tax_reduction_projects": {
+      "type": "float",
+      "desc": " ",
+      "cross_year": "",
+      "form": {
+        "2022": ""
+      }
+    },
+        "calc_profit_tax_reduction_citizens": {
+          "type": "float",
+          "desc": " ",
+          "cross_year": "",
+          "form": {
+            "2022": ""
+          }
+        },
+      "calc_profit_tax_payable": {
+        "type": "float",
+        "desc": " ",
+        "cross_year": "",
+        "form": {
+          "2022": ""
+        }
+      },
+  "calc_taxable_profit_loss": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+    "calc_taxable_profit_with_incentives": {
+      "type": "float",
+      "desc": " ",
+      "cross_year": "",
+      "form": {
+        "2022": ""
+      }
+    },
+   "calc_profit_tax_reporting": {
+     "type": "float",
+     "desc": " ",
+     "form": {
+       "2022": " "
+     },
+     "cross_year": "No",
+     "attribute": "No"
+   },
+  "calc_income_tax_ded": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_profit_tax_after_ded": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_reduced_income_foreign_profits": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_tax_foreign_profits_carried_over": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_profit_tax_after_deductions": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_total_profit_tax": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_profit_tax_after_ded_adv_pay": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "citax": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_min_inc_tax_carried_over": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_profit_tax_reimbursed_budget": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+   },
+    "calc_inc_total_0": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_inc_total_1": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_inc_total_2": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_inc_total_3": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_total_profit_tax_amount": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_tax_calc_comm_q": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_amount_ded_tax_q": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_total_ded_tax_q": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_tax_payable_calc_q": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_unded_trans_tax_next_q_purchase": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_tax_calc_pub_cater_q": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_amount_ded_tax_q_1": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_tax_payable_calc_q_1": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+   "calc_to_tax_amount": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_to_tax_amount_1": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_to_tax_amount_2": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_to_tax_amount_3": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_to_tax_amount_4": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_to_tax_amount_5": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_to_tax_amount_6": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_to_tax_amount_7": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_to_tax_amount_8": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_to_tax_amount_9": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+    }
+  },
+  "calc_sales_turn_rev_all_act": {
+    "type": "float",
+    "desc": " ",
+    "cross_year": "",
+    "form": {
+      "2022": ""
+      }
+     }
+   }   
+  }
+
+
+    

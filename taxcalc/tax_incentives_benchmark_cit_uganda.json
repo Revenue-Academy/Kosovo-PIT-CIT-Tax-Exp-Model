@@ -1,0 +1,11 @@
+
+
+{
+    "policy": {
+    "_ia_allowed_pm40": {"2021": [0]},
+    "_ia_allowed_pm35": {"2021": [0]},
+    "_ia_allowed_pm30": {"2021": [0]},
+    "_ia_allowed_pm20": {"2021": [0]},
+    "_ia_allowed_bld": {"2021": [0]}
+    }
+}
