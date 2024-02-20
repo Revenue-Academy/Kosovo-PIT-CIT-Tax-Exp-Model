@@ -2,11 +2,11 @@
 [![Codecov](https://codecov.io/gh/TPRU-demo/pitaxcalc-demo/branch/master/graph/badge.svg)](https://codecov.io/gh/TPRU-demo/pitaxcalc-demo)
 
 
-Demonstration repository for Personal Income Tax (PIT) microsimulation model
+Demonstration repository for Corporate Income Tax (CIT) and Personal Income Tax (PIT) microsimulation model
 ============================================================================
 
 This repository will be used in the World-Bank-sponsored training
-sessions beginning on 2018-09-24 in New Delhi at the Ministry of
+sessions in Kosovo at the Ministry of
 Finance.
 
 Getting Started
