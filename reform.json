@@ -1,11 +1,11 @@
 {
   "1": {
-    "selected_item": "toggle_charitable",
+    "selected_item": "rate1",
     "selected_year": [
       "2022"
     ],
     "selected_value": [
-      "0"
+      "0.15"
     ]
   }
 }

@@ -1,0 +1,348 @@
+{
+    "read": {
+        "id_n": {
+            "required": true,
+            "type": "int",
+            "desc": "Unique positive numeric identifier for filing unit",
+            "form": {
+                "2022": "private info"
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "Year": {
+            "required": true,
+            "type": "int",
+            "desc": "Tax Year",
+            "form": {
+                "2022": "private info"
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "gross_wage": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "net_income_business": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "net_income_partnership": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "gross_rents": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "gross_i_interest_pen_pay": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "gross_i_interest": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "gross_i_inta_prop": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "capital_gain": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "foreign_s_inc": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "other_inc_gifts": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "ded_rents_expen_rents10pct": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "ded_pen_cont": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "ded_exp_int_prop": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "other_allowed_ded": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "dis_charity_contribution": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "loss_carried_for": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "taxable_inc_before_tax": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "tax_withheld_wage_employer": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "tax_withheld_wage_interest": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "tax_withheld_rents": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "tax_witheld_lottery_gains": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "foreign_tax_credit": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "q_advance_business_inc": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "q_payment_ren_inc_int_prop": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        }
+    },
+    "calc": {
+        "calc_total": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_total_inc": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_total_ded": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_taxable_amount": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_charity_contribution": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_tot_additional_ded": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_taxable_inc_before_tax": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_tax_on_tax_inc_bracket": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_total_witheld_credit": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_total_pay_for": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_total_advance_payment": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+                "calc_total_tax_payable": {
+                    "type": "float",
+                    "desc": " ",
+                    "cross_year": "",
+                    "form": {
+                        "2022": ""
+                    }
+                },
+        "pitax": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,15 @@
+{
+  "0": "total_inc_fun",
+  "1": "total_ded_fun",
+  "2": "taxable_amount_fun",
+  "3": "tot_additional_ded_fun",
+  "4": "taxable_inc_before_tax_fun",
+  "5": "tax_on_tax_inc_bracket_fun",
+  "6": "total_witheld_credit_fun",
+  "7": "total_pay_for_fun",
+  "8": "total_advance_payment_fun",
+  "9": "total_tax_payable_fun",
+  "10": "total_tax_fun"
+}
+
+
