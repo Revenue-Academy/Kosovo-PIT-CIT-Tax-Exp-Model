@@ -43,17 +43,17 @@ def initialize_vars(self):
      
     ##### NOTE 'Year' is a key word for year in records variable
     
-    self.vars['DEFAULTS_FILENAME'] = "current_law_policy_pit_training.json"
-    self.vars['GROWFACTORS_FILENAME'] = "growfactors_pit_training.csv"
-    self.vars['pit_data_filename'] = "pit_data_training.csv"
-    self.vars['pit_weights_filename'] = "pit_weights_training.csv"
-    self.vars['pit_records_variables_filename'] = "records_variables_pit_training.json"
-    self.vars['pit_benchmark_filename'] = "taxcalc/tax_incentives_benchmark_pit_training.json"
+    self.vars['DEFAULTS_FILENAME'] = "current_law_policy_pit_kosovo.json"
+    self.vars['GROWFACTORS_FILENAME'] = "growfactors_pit_kosovo.csv"
+    self.vars['pit_data_filename'] = "dataset_pit_xk.csv"
+    self.vars['pit_weights_filename'] = "pit_weights_kosovo.csv"
+    self.vars['pit_records_variables_filename'] = "records_variables_pit_kosovo.json"
+    self.vars['pit_benchmark_filename'] = "taxcalc/tax_incentives_benchmark_pit_kosovo.json"
     self.vars['pit_elasticity_filename'] = "elasticity_pit_training.json"
-    self.vars['pit_functions_filename'] = "functions_pit_training.py"
-    self.vars['pit_function_names_filename'] = "function_names_pit_training.json"
-    self.vars['pit_distribution_json_filename'] = 'pit_distribution_training.json'  
-    self.vars['gdp_filename'] = 'gdp_nominal_training.csv'
+    self.vars['pit_functions_filename'] = "functions_pit_kosovo.py"
+    self.vars['pit_function_names_filename'] = "function_names_pit_kosovo.json"
+    self.vars['pit_distribution_json_filename'] = 'pit_distribution_kosovo.json'  
+    self.vars['gdp_filename'] = 'gdp_nominal_pit_kosovo.csv'
     
     '''
     self.vars['DEFAULTS_FILENAME'] = "current_law_policy_pit_armenia.json"
@@ -125,7 +125,7 @@ def initialize_vars(self):
     
     self.vars['start_year'] = 2022
     self.vars['end_year']=2028
-    self.vars['pit_data_start_year'] = 2021
+    self.vars['pit_data_start_year'] = 2022
     self.vars['cit_data_start_year'] = 2022
 
     df= pd.read_csv(self.vars['gdp_filename'])
@@ -245,10 +245,10 @@ def display_entry(self, widget, tax_type):
         self.entry_end_year[tax_type].destroy()
     else:
         if tax_type == 'pit':
-            self.vars['DEFAULTS_FILENAME'] = "current_law_policy_pit_armenia.json"
-            self.vars['GROWFACTORS_FILENAME'] = "growfactors_pit_armenia.csv"
-            self.vars['start_year'] = 2021
-            self.vars['data_start_year'] = 2021
+            self.vars['DEFAULTS_FILENAME'] = "current_law_policy_pit_kosovo.json"
+            self.vars['GROWFACTORS_FILENAME'] = "growfactors_pit_kosovo.csv"
+            self.vars['start_year'] = 2022
+            self.vars['data_start_year'] = 2022
             self.vars['SALARY_VARIABLE'] = "SALARY"
             self.vars['pit_id_var'] = 'id_n'
            

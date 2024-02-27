@@ -1,0 +1,203 @@
+{
+    "_rate1": {
+        "long_name": " ",
+        "description": " ",
+        "itr_ref": " ",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [0],
+        "range": {
+            "min": 0.0,
+            "max": 1.0
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_tbrk1": {
+        "long_name": " ",
+        "description": " ",
+        "itr_ref": " ",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [960],
+        "range": {
+            "min": 0.0,
+            "max": 10000
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_rate2": {
+        "long_name": " ",
+        "description": " ",
+        "itr_ref": " ",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [0.04],
+        "range": {
+            "min": 0.0,
+            "max": 1.0
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_tbrk2": {
+        "long_name": " ",
+        "description": " ",
+        "itr_ref": " ",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2022"
+        ],
+        "start_year": 2022,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "Value",
+        "col_label": ["Value"],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [3000],
+        "range": {
+            "min": 0.0,
+            "max": 10000
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+     "_rate3": {
+         "long_name": " ",
+         "description": " ",
+         "itr_ref": " ",
+         "notes": "",
+         "row_var": "Year",
+         "row_label": [
+             "2022"
+         ],
+         "start_year": 2022,
+         "cpi_inflatable": false,
+         "cpi_inflated": false,
+         "col_var": "Value",
+         "col_label": ["Value"],
+         "boolean_value": false,
+         "integer_value": false,
+         "value": [0.08],
+         "range": {
+             "min": 0.0,
+             "max": 1.0
+         },
+         "out_of_range_minmsg": "",
+         "out_of_range_maxmsg": "",
+         "out_of_range_action": "stop"
+     },
+     "_tbrk3": {
+         "long_name": " ",
+         "description": " ",
+         "itr_ref": " ",
+         "notes": "",
+         "row_var": "Year",
+         "row_label": [
+             "2022"
+         ],
+         "start_year": 2022,
+         "cpi_inflatable": false,
+         "cpi_inflated": false,
+         "col_var": "Value",
+         "col_label": ["Value"],
+         "boolean_value": false,
+         "integer_value": false,
+         "value": [5400],
+         "range": {
+             "min": 0.0,
+             "max": 10000
+         },
+         "out_of_range_minmsg": "",
+         "out_of_range_maxmsg": "",
+         "out_of_range_action": "stop"
+     },
+     "_rate4": {
+         "long_name": " ",
+         "description": " ",
+         "itr_ref": " ",
+         "notes": "",
+         "row_var": "Year",
+         "row_label": [
+             "2022"
+         ],
+         "start_year": 2022,
+         "cpi_inflatable": false,
+         "cpi_inflated": false,
+         "col_var": "Value",
+         "col_label": ["Value"],
+         "boolean_value": false,
+         "integer_value": false,
+         "value": [0.1],
+         "range": {
+             "min": 0.0,
+             "max": 1.0
+         },
+         "out_of_range_minmsg": "",
+         "out_of_range_maxmsg": "",
+         "out_of_range_action": "stop"
+     },
+     "_toggle_charitable": {
+         "long_name": " ",
+         "description": " ",
+         "itr_ref": " ",
+         "notes": "",
+         "row_var": "Year",
+         "row_label": [
+             "2022"
+         ],
+         "start_year": 2022,
+         "cpi_inflatable": false,
+         "cpi_inflated": false,
+         "col_var": "Value",
+         "col_label": ["Value"],
+         "boolean_value": false,
+         "integer_value": false,
+         "value": [0],
+         "range": {
+             "min": 0.0,
+             "max": 1.0
+         },
+         "out_of_range_minmsg": "",
+         "out_of_range_maxmsg": "",
+         "out_of_range_action": "stop"
+     }
+
+}
