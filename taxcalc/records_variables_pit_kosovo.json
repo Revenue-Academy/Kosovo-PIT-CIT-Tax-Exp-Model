@@ -254,6 +254,30 @@
                 "2022": ""
             }
         },
+        "calc_ded_exp_int_prop": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_ded_rents_expen_rents": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_other_allowed_ded": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
         "calc_total_ded": {
             "type": "float",
             "desc": " ",
@@ -326,14 +350,22 @@
                 "2022": ""
             }
         },
-                "calc_total_tax_payable": {
-                    "type": "float",
-                    "desc": " ",
-                    "cross_year": "",
-                    "form": {
-                        "2022": ""
-                    }
-                },
+        "calc_total_tax_payable": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_dis_charity_contribution": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
         "pitax": {
             "type": "float",
             "desc": " ",
@@ -344,5 +376,3 @@
         }
     }
 }
-
-
