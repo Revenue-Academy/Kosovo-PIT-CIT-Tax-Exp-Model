@@ -68,7 +68,8 @@ def write_file(df, text_data, filename, window=None, footer_row_num=None):
     if (window is not None) and (footer_row_num is not None):
         footer = ["footer", "*Data saved in file "+ filename]
         display_table(window, data=footer, footer=footer_row_num+2)
-    
+
+''' This function store the weighted total tax collection in billions in a dictionary called tax_dict '''
 def weighted_total_tax(calc, tax_list, category, year, tax_dict, gdp=None, attribute_var = None):
     for tax_type in tax_list:
         tax_dict[tax_type][year][category] = {}

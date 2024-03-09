@@ -10,8 +10,8 @@
     "pitax"
   ],
   "DIST_TABLE_LABELS": [
-    "Returns",
-    "Gross Total Income",
+    "No. of taxpayers",
+    "GTI before incentives",
     "PIT"
   ],
   "DECILE_ROW_NAMES": [

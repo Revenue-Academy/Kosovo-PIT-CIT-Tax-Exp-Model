@@ -108,7 +108,7 @@ def tab5(self):
     self.vars['sst'+'_display_distribution_table'] = 0
     self.vars['sst'+'_display_distribution_table_by_attribute'] = 0
     self.vars['sst'+'_display_revenue_table'] = 1
-
+    ''' Turn on the display revenue table to 1 by default '''
     self.vars['tot'+'_distribution_table'] = 0 
     self.vars['tot'+'_display_distribution_table'] = 0
     self.vars['tot'+'_display_distribution_table_by_attribute'] = 0

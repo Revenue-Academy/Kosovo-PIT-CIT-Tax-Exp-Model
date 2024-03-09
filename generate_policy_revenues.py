@@ -58,17 +58,14 @@ def concat_dicts(block_selected_dict, elasticity_dict):
 
 def write_file(df, text_data, filename, window=None, footer_row_num=None):
     df.to_csv(filename+'.csv', mode='w')
-    # a = open(filename+'.csv','w')
-    # a.write("\n")
-    # a.write("\n")
-    # a.close
     with open(filename+'.txt','w') as f:
         f.write(text_data)
     f.close
     if (window is not None) and (footer_row_num is not None):
         footer = ["footer", "*Data saved in file "+ filename]
         display_table(window, data=footer, footer=footer_row_num+2)
-    
+
+'''This function stores weighted tax collection in billions in a dictionary called tax-dict'''
 def weighted_total_tax(calc, tax_list, category, year, tax_dict, gdp=None, attribute_var = None):
     for tax_type in tax_list:
         tax_dict[tax_type][year][category] = {}
@@ -712,17 +709,7 @@ def generate_policy_revenues():
         else:
             kakwani_list = [np.NaN]
         print('kakwani', kakwani_list)
-        #print('gini ', gini_list)
-        #print('dt12[tax_type][All]', dt12[tax_type]['All'])
-        #print('dt34[tax_type][All]', dt34[tax_type]['All'])
         
-        # dt12[tax_type]['All'].update(dt12[tax_type]['All'].select_dtypes(include=np.number).applymap('{:,.0f}'.format))
-        # dt12[tax_type]['All'].to_pickle('file1.pkl')
-        # dt12[tax_type]['All'] = pd.read_pickle('file1.pkl')
-    
-        # dt34[tax_type]['All'].update(dt34[tax_type]['All'].select_dtypes(include=np.number).applymap('{:,.0f}'.format))
-        # dt34[tax_type]['All'].to_pickle('file2.pkl')
-        # dt34[tax_type]['All'] = pd.read_pickle('file2.pkl')
 
         dt12['All'].update(dt12['All'].select_dtypes(include=np.number).applymap('{:,.0f}'.format))
         dt12['All'].to_pickle('file1.pkl')
@@ -738,18 +725,7 @@ def generate_policy_revenues():
         dt_tax_all12 = dt_tax_all12.reset_index()
         dt_tax_all34 = dt_tax_all34.reset_index()
         
-        #print('dt_tax_all34', dt_tax_all34)
-    
-        # dt_tax_all12 = pd.DataFrame.from_dict(dt_tax_all12[tax_type])
-        # dt_tax_all12.insert(0, 'Dist_var', dt_tax_all12.index)
-        # dt_tax_all34 = pd.DataFrame.from_dict(dt_tax_all34[tax_type])
-        # dt_tax_all12.insert(0, 'Dist_var', dt_tax_all12.index)
-        # distribution_json_filename[tax_type] = 'taxcalc/'+global_variables[tax_type+'_distribution_json_filename']
-        # f = open(distribution_json_filename[tax_type])
-        # distribution_vardict_dict[tax_type] = json.load(f)
-        # income_measure = distribution_vardict_dict[tax_type]['income_measure']
-
-        #print('dt_tax_all34 columns', dt_tax_all34.columns)
+        
     # ETR is calculated for the Start Year
         dt_percentile['All']['ETR'] = dt_percentile['All'][tax_collection_var[tax_type]+'_'+str(start_year)]/dt_percentile['All'][income_measure[tax_type]+'_'+str(start_year)]           
         dt_percentile['All']['ETR_ref'] = dt_percentile['All'][tax_collection_var[tax_type]+'_ref_'+str(start_year)]/dt_percentile['All'][income_measure[tax_type]+'_ref_'+str(start_year)]    

@@ -409,6 +409,7 @@ class Application(tk.Frame):
         if global_vars['show_error_log']:
             self.logger.clear()
         self.verbose = global_vars['verbose']
+        ''' Turn the counter to 1 based on the distribution table '''
         if run_type=='dist_by_decile':
             self.vars[self.tax_type+'_display_distribution_table_bydecile'] = 1
             self.vars[self.tax_type+'_display_distribution_table_byincome'] = 0
