@@ -12,7 +12,7 @@
   "DIST_TABLE_LABELS": [
     "Returns",
     "Gross Total Income",
-    "PITax"
+    "PIT"
   ],
   "DECILE_ROW_NAMES": [
     " 0-10n",

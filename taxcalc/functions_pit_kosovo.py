@@ -10,7 +10,6 @@ import copy
 import numpy as np
 from taxcalc.decorators import iterate_jit
 
-
 '''
 -------------------------------------------------------------------------------------
 I. PERSONAL INCOME TAX CALCULATION
