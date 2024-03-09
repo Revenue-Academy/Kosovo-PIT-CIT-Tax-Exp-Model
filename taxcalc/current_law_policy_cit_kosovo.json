@@ -49,6 +49,56 @@
         "out_of_range_maxmsg": "",
         "out_of_range_action": "stop"
     },
+     "_rate_spl_all": {
+         "long_name": " Special allowance for new assets",
+         "description": " ",
+         "itr_ref": " ",
+         "notes": "",
+         "row_var": "Year",
+         "row_label": [
+             "2022"
+         ],
+         "start_year": 2022,
+         "cpi_inflatable": false,
+         "cpi_inflated": false,
+         "col_var": "Value",
+         "col_label": ["Value"],
+         "boolean_value": false,
+         "integer_value": false,
+         "value": [1.0],
+         "range": {
+             "min": 0.0,
+             "max": 1.0
+         },
+         "out_of_range_minmsg": "",
+         "out_of_range_maxmsg": "",
+         "out_of_range_action": "stop"
+     },
+       "_rate_tax_rent": {
+           "long_name": "Tax rate for rental income",
+           "description": " ",
+           "itr_ref": " ",
+           "notes": "",
+           "row_var": "Year",
+           "row_label": [
+               "2022"
+           ],
+           "start_year": 2022,
+           "cpi_inflatable": false,
+           "cpi_inflated": false,
+           "col_var": "Value",
+           "col_label": ["Value"],
+           "boolean_value": false,
+           "integer_value": false,
+           "value": [0.09],
+           "range": {
+               "min": 0.0,
+               "max": 1.0
+           },
+           "out_of_range_minmsg": "",
+           "out_of_range_maxmsg": "",
+           "out_of_range_action": "stop"
+       },
     "_rate_small_trans_ag": {
         "long_name": " ",
         "description": " ",
@@ -65,7 +115,7 @@
         "col_label": ["Value"],
         "boolean_value": false,
         "integer_value": false,
-        "value": [0.09],
+        "value": [0.03],
         "range": {
             "min": 0.0,
             "max": 1.0
@@ -74,7 +124,7 @@
         "out_of_range_maxmsg": "",
         "out_of_range_action": "stop"
     },
-     "_min_payment": {
+     "_min_payment_small": {
          "long_name": " ",
          "description": " ",
          "itr_ref": " ",
@@ -124,7 +174,7 @@
               "out_of_range_maxmsg": "",
               "out_of_range_action": "stop"
           },
-    "_toggle_charitable": {
+    "_rate_max_charitable_ded": {
         "long_name": " ",
         "description": " ",
         "itr_ref": " ",
@@ -140,7 +190,7 @@
         "col_label": ["Value"],
         "boolean_value": false,
         "integer_value": false,
-        "value": [1],
+        "value": [0.05],
         "range": {
             "min": 0.0,
             "max": 1.0
@@ -149,8 +199,8 @@
         "out_of_range_maxmsg": "",
         "out_of_range_action": "stop"
     },
-     "_toggle_sport": {
-         "long_name": " ",
+     "_Loss_CFLimit": {
+         "long_name": " Loss carryforward limit in years",
          "description": " ",
          "itr_ref": " ",
          "notes": "",
@@ -164,17 +214,17 @@
          "col_var": "Value",
          "col_label": ["Value"],
          "boolean_value": false,
-         "integer_value": false,
+         "integer_value": true,
          "value": [1],
          "range": {
-             "min": 0.0,
-             "max": 1.0
+             "min": 0,
+             "max": 1e+99
          },
          "out_of_range_minmsg": "",
          "out_of_range_maxmsg": "",
          "out_of_range_action": "stop"
      },
-      "_toggle_culture_youth": {
+      "_rate_ded_culture_youth": {
           "long_name": " ",
           "description": " ",
           "itr_ref": " ",
@@ -190,7 +240,7 @@
           "col_label": ["Value"],
           "boolean_value": false,
           "integer_value": false,
-          "value": [1],
+          "value": [0.2],
           "range": {
               "min": 0.0,
               "max": 1.0
@@ -199,6 +249,31 @@
           "out_of_range_maxmsg": "",
           "out_of_range_action": "stop"
       },
+        "_rate_ded_sponsorship": {
+            "long_name": " ",
+            "description": " ",
+            "itr_ref": " ",
+            "notes": "",
+            "row_var": "Year",
+            "row_label": [
+                "2022"
+            ],
+            "start_year": 2022,
+            "cpi_inflatable": false,
+            "cpi_inflated": false,
+            "col_var": "Value",
+            "col_label": ["Value"],
+            "boolean_value": false,
+            "integer_value": false,
+            "value": [0.3],
+            "range": {
+                "min": 0.0,
+                "max": 1.0
+            },
+            "out_of_range_minmsg": "",
+            "out_of_range_maxmsg": "",
+            "out_of_range_action": "stop"
+        },
 "_elasticity_cit_taxable_income_value": {
         "long_name": "Elasticity of Taxable Income",
         "description": "elasticity",

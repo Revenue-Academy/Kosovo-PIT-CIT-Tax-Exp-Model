@@ -72,7 +72,7 @@ def initialize_vars(self):
     
     self.vars['DEFAULTS_FILENAME'] = "current_law_policy_cit_kosovo.json"    
     self.vars['GROWFACTORS_FILENAME'] = "growfactors_cit_kosovo.csv"
-    self.vars['cit_data_filename'] = "dataset_cit_xk.csv"
+    self.vars['cit_data_filename'] = "cit_data_kosovo.csv"
     self.vars['cit_weights_filename'] = "cit_weights_kosovo.csv"
     self.vars['cit_records_variables_filename'] = "records_variables_cit_kosovo.json"    
     self.vars['cit_benchmark_filename'] = "taxcalc/tax_incentives_benchmark_cit_kosovo.json"
@@ -80,6 +80,7 @@ def initialize_vars(self):
     self.vars['cit_functions_filename'] = "functions_cit_kosovo.py"
     self.vars['cit_function_names_filename'] = "function_names_cit_kosovo.json"
     self.vars['cit_distribution_json_filename'] = 'cit_distribution_kosovo.json'
+    self.vars['tot_distribution_json_filename'] = 'tot_distribution_kosovo.json'
     self.vars['gdp_filename'] = 'gdp_nominal_cit_kosovo.csv'
     '''
     self.vars['DEFAULTS_FILENAME'] = "current_law_policy_cit_uganda.json"    
@@ -94,7 +95,7 @@ def initialize_vars(self):
     self.vars['cit_distribution_json_filename'] = 'cit_distribution_uganda.json'
     self.vars['gdp_filename'] = 'gdp_nominal_uganda.csv'
     '''
-    self.vars['cit_max_lag_years'] = 10
+    self.vars['cit_max_lag_years'] = 1
 
     self.vars['vat_data_filename'] = "vat.csv"
     self.vars['vat_weights_filename'] = "vat_weights.csv"
@@ -120,6 +121,10 @@ def initialize_vars(self):
     self.vars['vat_display_distribution_table_byincome'] = 0
     self.vars['vat_display_distribution_table_bydecile'] = 0
     self.vars['vat_display_revenue_table'] = 1
+
+    self.vars['tot_display_distribution_table_byincome'] = 0
+    self.vars['tot_display_distribution_table_bydecile'] = 0
+    self.vars['tot_display_revenue_table'] = 1
     
     self.vars['kakwani_list'] = []
     

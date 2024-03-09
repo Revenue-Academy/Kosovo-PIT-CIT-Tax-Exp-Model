@@ -174,8 +174,8 @@
          "out_of_range_maxmsg": "",
          "out_of_range_action": "stop"
      },
-      "_toggle_ded_exp_int_prop": {
-          "long_name": " ",
+_rate_ded_rent": {
+          "long_name": " Rate of deduction from gross rents",
           "description": " ",
           "itr_ref": " ",
           "notes": "",
@@ -190,7 +190,7 @@
           "col_label": ["Value"],
           "boolean_value": false,
           "integer_value": false,
-          "value": [1],
+          "value": [0.1],
           "range": {
               "min": 0.0,
               "max": 1.0
@@ -199,8 +199,8 @@
           "out_of_range_maxmsg": "",
           "out_of_range_action": "stop"
       },
-       "_toggle_other_allowed_ded": {
-           "long_name": " ",
+"_rate_ded_charitable": {
+          "long_name": " ",
            "description": " ",
            "itr_ref": " ",
            "notes": "",
@@ -223,81 +223,5 @@
            "out_of_range_minmsg": "",
            "out_of_range_maxmsg": "",
            "out_of_range_action": "stop"
-       },
-     "_rate_charitable_contribution": {
-         "long_name": " ",
-         "description": " ",
-         "itr_ref": " ",
-         "notes": "",
-         "row_var": "Year",
-         "row_label": [
-             "2022"
-         ],
-         "start_year": 2022,
-         "cpi_inflatable": false,
-         "cpi_inflated": false,
-         "col_var": "Value",
-         "col_label": ["Value"],
-         "boolean_value": false,
-         "integer_value": false,
-         "value": [0.05],
-         "range": {
-             "min": 0.0,
-             "max": 1.0
-         },
-         "out_of_range_minmsg": "",
-         "out_of_range_maxmsg": "",
-         "out_of_range_action": "stop"
-     },
-     "_rate_ded_rents": {
-         "long_name": " ",
-         "description": " ",
-         "itr_ref": " ",
-         "notes": "",
-         "row_var": "Year",
-         "row_label": [
-             "2022"
-         ],
-         "start_year": 2022,
-         "cpi_inflatable": false,
-         "cpi_inflated": false,
-         "col_var": "Value",
-         "col_label": ["Value"],
-         "boolean_value": false,
-         "integer_value": false,
-         "value": [0.1],
-         "range": {
-             "min": 0.0,
-             "max": 1.0
-         },
-         "out_of_range_minmsg": "",
-         "out_of_range_maxmsg": "",
-         "out_of_range_action": "stop"
-     },
-     "_toggle_charitable": {
-         "long_name": " ",
-         "description": " ",
-         "itr_ref": " ",
-         "notes": "",
-         "row_var": "Year",
-         "row_label": [
-             "2022"
-         ],
-         "start_year": 2022,
-         "cpi_inflatable": false,
-         "cpi_inflated": false,
-         "col_var": "Value",
-         "col_label": ["Value"],
-         "boolean_value": false,
-         "integer_value": false,
-         "value": [1],
-         "range": {
-             "min": 0.0,
-             "max": 1.0
-         },
-         "out_of_range_minmsg": "",
-         "out_of_range_maxmsg": "",
-         "out_of_range_action": "stop"
-     }
-
+       }
 }

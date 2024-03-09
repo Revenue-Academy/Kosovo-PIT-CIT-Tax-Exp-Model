@@ -1,17 +1,17 @@
 {
   "DIST_VARIABLES": [
     "weight",
-    "taxable_profit_with_incentives",
+    "calc_grossinc",
     "citax"
   ],
   "DIST_TABLE_COLUMNS": [
     "weight",
-    "taxable_profit_with_incentives",
+    "calc_grossinc",
     "citax"
   ],
   "DIST_TABLE_LABELS": [
     "Returns",
-    "Accounting Profit",
+    "Gross Income before incentives",
     "Corporate Income Tax"
   ],
   "DECILE_ROW_NAMES": [
@@ -64,5 +64,5 @@
     1000000000.0,
     9e+99
   ],
-  "income_measure": "taxable_profit_with_incentives"
+  "income_measure": "calc_grossinc"
 }

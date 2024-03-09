@@ -1,29 +1,7 @@
 {
     "policy": {
-        "_toggle_charitable": {
-            "2022": [
-                0
-            ]
-        },
-        "_toggle_ded_exp_int_prop": {
-            "2022": [
-                0
-            ]
-        },
-        "_toggle_other_allowed_ded": {
-            "2022": [
-                0
-            ]
-        },
-        "_rate_ded_rents": {
-            "2022": [
-                0
-            ]
-        },
-        "_rate_charitable_contribution": {
-            "2022": [
-                0
-            ]
-        }
+    "_rate_ded_charitable": {"2022": [0]},
+     "_rate_ded_rent": {"2022": [0]}
+    
     }
 }

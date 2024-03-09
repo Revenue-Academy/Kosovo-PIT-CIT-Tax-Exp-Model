@@ -14,9 +14,13 @@ import pkg_resources
 import numpy as np
 import pandas as pd
 from taxcalc.utilsprvt import (weighted_count_lt_zero,
-                               weighted_count_gt_zero,
-                               weighted_count)
+                                weighted_count_gt_zero,
+                                weighted_count)
 
+
+# from utilsprvt import (weighted_count_lt_zero,
+#                                weighted_count_gt_zero,
+#                                weighted_count)
 """
 print("in global of utils")
 f = open('global_vars.json')
@@ -285,6 +289,7 @@ def create_distribution_table(vdf, groupby, distribution_vardict, income_measure
         return sdf
     # main logic of create_distribution_table
     assert isinstance(vdf, pd.DataFrame)
+    #print('vdf is ', vdf)
     assert (groupby == 'weighted_deciles' or
             groupby == 'weighted_percentiles' or
             groupby == 'standard_income_bins')
@@ -306,6 +311,7 @@ def create_distribution_table(vdf, groupby, distribution_vardict, income_measure
     # construct grouped DataFrame
     gpdf = pdf.groupby('table_row', as_index=False)
     dist_table = stat_dataframe(gpdf, distribution_vardict['DIST_TABLE_COLUMNS'])
+    print('dist_table weighted deciles', dist_table)
     del pdf['table_row']
     # compute sum row
     sum_row = get_sums(dist_table)[dist_table.columns]
@@ -375,7 +381,8 @@ def create_distribution_table(vdf, groupby, distribution_vardict, income_measure
                     dist_table[col] *= 1
                     dist_table.round({col: 0})
                 else:
-                    dist_table[col] *= 1e-6
+                    #dist_table[col] *= 1e-6
+                    dist_table[col] *= 1
                     dist_table[col]=dist_table[col].astype(float).round(0)
                     #dist_table.round({col: 3})
     # return table as Pandas DataFrame

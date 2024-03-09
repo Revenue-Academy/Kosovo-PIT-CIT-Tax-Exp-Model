@@ -1,14 +1,12 @@
 {
-    "0": "total_inc_fun",
-    "1": "ded_exp_int_prop_fun",
-    "2": "other_allowed_ded_fun",
-    "3": "total_ded_rents_expen_rents_fun",
-    "4": "tax_charity_contribution_fun",
-    "5": "total_ded_fun",
-    "6": "taxable_amount_fun",
-    "7": "tot_additional_ded_fun",
-    "8": "taxable_inc_before_tax_fun",
-    "9": "total_tax_fun"
-}
+  "0": "total_inc_fun",
+  "1": "total_ded_fun",
+  "2": "taxable_amount_fun",
+  "3": "charity_contribution_fun",
+  "4": "tot_additional_ded_fun",
+  "5": "taxable_inc_before_tax_fun",
+  "6": "tax_on_tax_inc_bracket_fun"
+ }
+
 
 

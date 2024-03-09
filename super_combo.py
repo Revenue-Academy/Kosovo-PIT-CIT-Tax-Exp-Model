@@ -122,7 +122,9 @@ class super_combo(tk.Frame):
             self.minus_button_x = self.plus_button_x + self.entry_entry_gap_x
             self.minus_button_y = self.entry_1_y
             self.reset_button_x = self.minus_button_x + self.entry_entry_gap_x
-            self.reset_button_y = self.entry_1_y            
+            self.reset_button_y = self.entry_1_y
+            self.long_name_label_x = self.reset_button_x + self.entry_entry_gap_x
+            self.long_name_label_y = self.entry_1_y            
             self.generate_revenue_policy_button_x = self.combo_x
             self.generate_revenue_policy_button_y = self.combo_y + self.combo_button_gap_y             
             self.attribute_entry_x = self.combo_x + self.combo_width_x+ self.combo_entry_gap_x
@@ -314,15 +316,33 @@ class super_combo(tk.Frame):
             self.input_json = self.input_json_main
 
         input_json_sorted = dict(sorted(self.input_json.items()))
+        print('input json', input_json_sorted)
+
         policy_options_list = []
         for k, s in input_json_sorted.items(): 
-             #Don't show the current law rates and the elasticity items in the drop down list
+        #Don't show the current law rates and the elasticity items in the drop down list
             if self.elasticity:
                 if (k[1:11] == 'elasticity'):
                     policy_options_list = policy_options_list + [k[1:]]
             elif (k[-8:] != 'curr_law') and (k[1:11] != 'elasticity'):
                 policy_options_list = policy_options_list + [k[1:]]
-        #print('policy_options_list ', policy_options_list)
+       
+        #policy_options_dict = {}
+        # for k, s in input_json_sorted.items(): 
+        #      #Don't show the current law rates and the elasticity items in the drop down list
+        #     if self.elasticity:
+        #         if (k[1:11] == 'elasticity'):
+        #             policy_options_dict['policy_var'] = [k[1:]]
+        #             for m, n in s.items():
+        #                 if m == "long_name":
+        #                     policy_options_dict['policy_var']['policy_varname'] = n
+        #         elif (k[-8:] != 'curr_law') and (k[1:11] != 'elasticity'):
+        #             policy_options_dict['policy_var'] = k[1:]
+        #             for m, n in s.items():
+        #                 if m == "long_name":
+        #                     policy_options_dict['policy_var']['policy_varname'] = policy_options_desc_list + [n]
+
+        print('policy_options_list ', policy_options_list)
         return (policy_options_list)
     
     def policy_reform():
@@ -348,6 +368,7 @@ class super_combo(tk.Frame):
             self.attribute_value = self.selected_attribute_widget.get()
             self.input_json=self.input_json_main[self.attribute_value]      
         selected_item = widget_dict[num][1].get()
+
         #print('vars ',vars)
         selected_param = {}
         selected_value = {}
@@ -401,7 +422,8 @@ class super_combo(tk.Frame):
 
         if self.attribute_value is not None:
             widget_dict[num][4].delete(0, tk.END)
-            widget_dict[num][4].insert(tk.END, self.attribute_value)     
+            widget_dict[num][4].insert(tk.END, self.attribute_value) 
+        print('widget_dict is', widget_dict)    
         return widget_dict
 
     def display_widgets(self, tab):
@@ -472,6 +494,13 @@ class super_combo(tk.Frame):
         self.l5[1]=tk.Label(tab, text="Value: ", font = self.fontStyle)
         self.l5[1].place(relx = self.entry_2_label_x, 
                  rely = self.entry_2_label_y, anchor = "w")
+        
+        # var = tk.StringVar() 
+        # var.set("Long name placeholder")
+        # self.long_name = {}
+        # self.long_name = tk.Label(tab, textvariable=var, font = self.fontStyle)
+        # self.long_name.place(relx = self.long_name_label_x, rely = self.long_name_label_y, anchor = "w")
+
         #print('Value: ', round(self.entry_2_label_x,2), self.entry_2_label_y)
         self.block_widget_dict[1][3] = {}
         year = start_year        

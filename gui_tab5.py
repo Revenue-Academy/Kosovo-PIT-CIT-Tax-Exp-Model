@@ -42,7 +42,7 @@ def display_distribution(self, widget, tax_type, block_1_title_pos_x):
         self.msg_window.protocol("WM_DELETE_WINDOW", lambda: self.on_closing(widget, self.msg_window))
     else:
         self.vars[tax_type+'_distribution_table'] = int(widget.get())
-        #print("self.vars[tax_type+'_distribution_table'] ", self.vars[tax_type+'_distribution_table'])
+        print("self.vars[tax_type+'_distribution_table'] ", self.vars[tax_type+'_distribution_table'])
         if self.vars[tax_type+'_distribution_table']:
             self.grid_placement(block_1_title_pos_x)
             self.l1_distribution[tax_type]=Label(self.TAB5,text="Data Inputs for Distribution Table "+ tax_type.upper(),
@@ -78,6 +78,7 @@ def display_distribution(self, widget, tax_type, block_1_title_pos_x):
             self.button_generate_distribution.config(command=lambda: self.clicked_generate_distribution('dist_by_income'))
             
         else:
+            #self.vars[tax_type+'_display_revenue_table'] = 1
             self.vars[tax_type+'_display_revenue_table'] = 1
             self.save_inputs()
             self.l1_distribution[tax_type].destroy()
@@ -97,6 +98,7 @@ def tab5(self):
     pos_x = [0.10, 0.40, 0.70]
 
     for tax_type in self.tax_list:
+        print('self.tax_list', self.tax_list)
         self.vars[tax_type+'_distribution_table'] = 0
         self.vars[tax_type+'_display_distribution_table'] = 0
         self.vars[tax_type+'_display_distribution_table_by_attribute'] = 0
@@ -106,6 +108,11 @@ def tab5(self):
     self.vars['sst'+'_display_distribution_table'] = 0
     self.vars['sst'+'_display_distribution_table_by_attribute'] = 0
     self.vars['sst'+'_display_revenue_table'] = 1
+
+    self.vars['tot'+'_distribution_table'] = 0 
+    self.vars['tot'+'_display_distribution_table'] = 0
+    self.vars['tot'+'_display_distribution_table_by_attribute'] = 0
+    self.vars['tot'+'_display_revenue_table'] = 1
         
     self.save_inputs()
     self.block_distribution_pos_x = self.allocate_pos_x(pos_x, self.status,

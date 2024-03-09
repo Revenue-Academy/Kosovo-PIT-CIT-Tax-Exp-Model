@@ -29,6 +29,15 @@
             "cross_year": "No",
             "attribute": "No"
         },
+          "profitloss_afteradjinc": {
+              "type": "float",
+              "desc": " ",
+              "form": {
+                  "2022": " "
+              },
+              "cross_year": "No",
+              "attribute": "No"
+          },
         "forsourceincsch_a": {
             "type": "float",
             "desc": " ",
@@ -380,6 +389,53 @@
                     "cross_year": "No",
                     "attribute": "No"
                 },
+                 "gross_inc_rent": {
+                     "type": "float",
+                     "desc": " ",
+                     "cross_year": "",
+                     "form": {
+                         "2022": ""
+                     },
+                     "attribute": "No"
+                 },
+                 "rent_tax_held_oth": {
+                      "type": "float",
+                      "desc": " ",
+                      "cross_year": "",
+                      "form": {
+                          "2022": ""
+                      },
+                      "attribute": "No"
+                  },
+                     "Loss_lag1": {
+                          "type": "float",
+                          "desc": " ",
+                          "cross_year": "",
+                          "form": {
+                              "2022": ""
+                          },
+                          "attribute": "No"
+                      },
+                      
+        "totadjinc_l11_l15": {
+                            "type": "float",
+                            "desc": " ",
+                            "form": {
+                                "2022": " "
+                            },
+                            "cross_year": "No",
+                            "attribute": "No"
+                        },
+        "totalspodisc_max30pct_box42": {
+                            "type": "float",
+                            "desc": " ",
+                            "form": {
+                                "2022": " "
+                            },
+                            "cross_year": "No",
+                            "attribute": "No"
+                        },
+                               
         "sector": {
             "type": "string",
             "desc": " ",
@@ -415,7 +471,7 @@
                 "2022": ""
             }
         },
-        "calc_proflossaftadjexp_l17_l27": {
+        "calc_grossinc": {
             "type": "float",
             "desc": " ",
             "cross_year": "",
@@ -455,7 +511,7 @@
                 "2022": ""
             }
         },
-        "calc_corpinctax_insurcomp": {
+        "citax_insurance": {
             "type": "float",
             "desc": " ",
             "cross_year": "",
@@ -463,6 +519,14 @@
                 "2022": ""
             }
         },
+         "citax_non_insurance": {
+             "type": "float",
+             "desc": " ",
+             "cross_year": "",
+             "form": {
+                 "2022": ""
+             }
+         },
         "calc_corpinctax_total": {
             "type": "float",
             "desc": " ",
@@ -599,6 +663,71 @@
                 "2022": ""
             }
         },
+          "newloss1": {
+              "type": "float",
+              "desc": " ",
+              "cross_year": "",
+              "form": {
+                  "2022": ""
+              }
+          },
+            "calc_gti": {
+                "type": "float",
+                "desc": " ",
+                "cross_year": "",
+                "form": {
+                    "2022": ""
+                }
+            },
+              "calc_nti": {
+                  "type": "float",
+                  "desc": " ",
+                  "cross_year": "",
+                  "form": {
+                      "2022": ""
+                  }
+              },
+                 "calc_rent_tax": {
+                     "type": "float",
+                     "desc": " ",
+                     "cross_year": "",
+                     "form": {
+                         "2022": ""
+                     }
+                 },
+               "calc_citax_large_net": {
+                   "type": "float",
+                   "desc": " ",
+                   "cross_year": "",
+                   "form": {
+                       "2022": ""
+                   }
+               },
+          "totax": {
+              "type": "float",
+              "desc": " ",
+              "cross_year": "",
+              "form": {
+                  "2022": ""
+              }
+          },
+          "calc_turnover_small": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+            "citax_large": {
+                "type": "float",
+                "desc": " ",
+                "cross_year": "",
+                "form": {
+                    "2022": ""
+                }
+            },
+        
         "citax": {
             "type": "float",
             "desc": " ",

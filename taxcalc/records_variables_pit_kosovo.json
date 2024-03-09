@@ -326,7 +326,7 @@
                 "2022": ""
             }
         },
-        "calc_total_witheld_credit": {
+        "calc_gti": {
             "type": "float",
             "desc": " ",
             "cross_year": "",

@@ -1,0 +1,611 @@
+{
+    "read": {
+        "id_n": {
+            "required": true,
+            "type": "int",
+            "desc": "Unique positive numeric identifier for filing unit",
+            "form": {
+                "2022": "private info"
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "Year": {
+            "required": true,
+            "type": "int",
+            "desc": "Tax Year",
+            "form": {
+                "2022": "private info"
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "TypeOfTax": {
+            "type": "int",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "forsourceincsch_a": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "recbaddebts_sch_b": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "capgain_sch_c": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "div_sch_d": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "otherincgain_sch_e": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "netprofit_fd": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "disallowedexp_sch_f": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "repcosts_sch_g": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "reservefunds_sch_h": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "paymrelper_sch_i": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "amort_sch_j": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "dep_sch_k": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "specallownewassets_sch_l": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "caploss_sch_c": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "otherexp_sch_m": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "charitycontrib_box28": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "losscarryforward": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "gross_prem": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "forstattaxcredit_sch_o": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "taxwithheld_sch_p": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "sportspodisc_max30pct_box42": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "culyouthspodisc_max20pct_box42": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "installmentspaid_sch_q": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "openinginv": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "costofprod": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "endinginventory": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "grossinc": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "grosswages": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "depamortexp_notincost": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "sellingexp": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "genadminexp_notincost": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+         "costofgoodssold_l63_l64": {
+             "type": "float",
+             "desc": " ",
+             "form": {
+                 "2022": " "
+             },
+             "cross_year": "No",
+             "attribute": "No"
+         },
+        "rnd_costs": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "otheropexp": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "otherrevgains": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "otherexploss": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "g_inc_spcel": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+        "g_inc_q": {
+            "type": "float",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        },
+     "taxpaywithform_l36_l39_l41_l45": {
+                    "type": "float",
+                    "desc": " ",
+                    "form": {
+                        "2022": " "
+                    },
+                    "cross_year": "No",
+                    "attribute": "No"
+                },
+        "sector": {
+            "type": "string",
+            "desc": " ",
+            "form": {
+                "2022": " "
+            },
+            "cross_year": "No",
+            "attribute": "No"
+        }
+    },
+    "calc": {
+        "calc_totadjinc_l11_l15": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_profitloss_afteradjinc": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_totadjexp_l18_l26": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_proflossaftadjexp_l17_l27": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_charitycontrib_box28": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_add_l29_l30": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_adjprofit_l28_l31": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_corpinctax_l32": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_corpinctax_insurcomp": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_corpinctax_total": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_totcredits_l37_l38": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_l36_minus_l39": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_sportspodisc_max30pct_box42": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_culyouthspodisc_max20pct_box42": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_totalspodisc_max30pct_box42": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_taxpaywithform": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_total_l61_l62": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_grossprofit_l60_l65": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_totalopexp_l67_l72": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_profitloss_oper_l66_l73": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_profitloss_nonopact_l75_l76": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+                "calc_costofgoodssold_l63_l64": {
+                    "type": "float",
+                    "desc": " ",
+                    "cross_year": "",
+                    "form": {
+                        "2022": ""
+                    }
+                },
+        "calc_netprofitloss_l74_l77": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_tqi_3pct": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_tqi_9pct": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "calc_tot_amount_3pct_9pct": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        },
+        "citax": {
+            "type": "float",
+            "desc": " ",
+            "cross_year": "",
+            "form": {
+                "2022": ""
+            }
+        }
+    }
+}
