@@ -10,7 +10,7 @@
   "pit_function_names_filename": "function_names_pit_kosovo.json",
   "pit_distribution_json_filename": "pit_distribution_kosovo.json",
   "gdp_filename": "gdp_nominal_cit_kosovo.csv",
-  "cit_data_filename": "dataset_cit_xk.csv",
+  "cit_data_filename": "cit_data_kosovo.csv",
   "cit_weights_filename": "cit_weights_kosovo.csv",
   "cit_records_variables_filename": "records_variables_cit_kosovo.json",
   "cit_benchmark_filename": "taxcalc/tax_incentives_benchmark_cit_kosovo.json",
@@ -18,7 +18,8 @@
   "cit_functions_filename": "functions_cit_kosovo.py",
   "cit_function_names_filename": "function_names_cit_kosovo.json",
   "cit_distribution_json_filename": "cit_distribution_kosovo.json",
-  "cit_max_lag_years": 10,
+  "tot_distribution_json_filename": "tot_distribution_kosovo.json",
+  "cit_max_lag_years": 1,
   "vat_data_filename": "vat.csv",
   "vat_weights_filename": "vat_weights.csv",
   "vat_records_variables_filename": "vat_records_variables.json",
@@ -39,10 +40,13 @@
   "vat_display_distribution_table_byincome": 0,
   "vat_display_distribution_table_bydecile": 0,
   "vat_display_revenue_table": 1,
+  "tot_display_distribution_table_byincome": 1,
+  "tot_display_distribution_table_bydecile": 0,
+  "tot_display_revenue_table": 0,
   "kakwani_list": [
-    0.8804959926505156,
-    -0.010919475985760374,
-    -0.04815700315620042
+    0.8019605257745572,
+    0.049256630367020326,
+    0.049256630367020326
   ],
   "start_year": "2022",
   "end_year": "2028",
@@ -82,6 +86,7 @@
   "cit_adjust_behavior": 0,
   "vat_adjust_behavior": 0,
   "sst_adjust_behavior": 0,
+  "tot_adjust_behavior": 0,
   "pit_display_distribution_table": 0,
   "pit_display_distribution_table_by_attribute": 0,
   "cit_distribution_table": 0,
@@ -92,5 +97,8 @@
   "vat_display_distribution_table_by_attribute": 0,
   "sst_distribution_table": 0,
   "sst_display_distribution_table": 0,
-  "sst_display_distribution_table_by_attribute": 0
+  "sst_display_distribution_table_by_attribute": 0,
+  "tot_distribution_table": 1,
+  "tot_display_distribution_table": 0,
+  "tot_display_distribution_table_by_attribute": 0
 }

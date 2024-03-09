@@ -199,7 +199,7 @@ def generate_tax_expenditures():
     np.seterr(divide='ignore', invalid='ignore')
     #pol2 = Policy()
     #reform = Calculator.read_json_param_objects(global_variables['pit_benchmark_filename'], None)  
-    reform = Calculator.read_json_param_objects(global_variables['cit_benchmark_filename'], None)  
+    reform = Calculator.read_json_param_objects(global_variables[tax_type + '_benchmark_filename'], None)  
     ref_dict = reform['policy']
     var_list = []
     tax_expenditure_var_list = []

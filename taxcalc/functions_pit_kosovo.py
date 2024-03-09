@@ -70,10 +70,10 @@ def taxable_inc_before_tax_fun(calc_gti,calc_tot_additional_ded,calc_taxable_inc
 
 # D30 Tax on Taxable Income as per tax brackets 
 @iterate_jit(nopython=True)
-def tax_on_tax_inc_bracket_fun(taxable_inc_before_tax, rate1, rate2, rate3, rate4, tbrk1, tbrk2, tbrk3,pitax):
-    pitax = (rate1 * min(taxable_inc_before_tax, tbrk1) +
-                    rate2 * min(tbrk2 - tbrk1, max(0., taxable_inc_before_tax - tbrk1)) +
-                    rate3 * min(tbrk3 - tbrk2, max(0., taxable_inc_before_tax - tbrk2)) +
-                    rate4 * max(0., taxable_inc_before_tax - tbrk3))
+def tax_on_tax_inc_bracket_fun(calc_taxable_inc_before_tax, rate1, rate2, rate3, rate4, tbrk1, tbrk2, tbrk3,pitax):
+    pitax = (rate1 * min(calc_taxable_inc_before_tax, tbrk1) +
+                    rate2 * min(tbrk2 - tbrk1, max(0., calc_taxable_inc_before_tax - tbrk1)) +
+                    rate3 * min(tbrk3 - tbrk2, max(0., calc_taxable_inc_before_tax - tbrk2)) +
+                    rate4 * max(0., calc_taxable_inc_before_tax - tbrk3))
     return (pitax)
 
