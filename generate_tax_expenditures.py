@@ -80,10 +80,10 @@ def weighted_total_tax(calc, tax_list, category, year, tax_dict, gdp=None, attri
             tax_dict[tax_type][year][category]['value_gdp'] = {}
             tax_dict[tax_type][year][category]['value_gdp_str'] = {}        
         for k in tax_dict[tax_type][year][category]['value'].keys():
-            tax_dict[tax_type][year][category]['value_bill'][k] = tax_dict[tax_type][year][category]['value'][k]/10**9
+            tax_dict[tax_type][year][category]['value_bill'][k] = tax_dict[tax_type][year][category]['value'][k]/10**3
             tax_dict[tax_type][year][category]['value_bill_str'][k] = '{0:.2f}'.format(tax_dict[tax_type][year][category]['value_bill'][k])        
             if gdp is not None:
-                tax_dict[tax_type][year][category]['value_gdp'][k] = ((tax_dict[tax_type][year][category]['value'][k]/10**9)/gdp[str(year)])*100
+                tax_dict[tax_type][year][category]['value_gdp'][k] = ((tax_dict[tax_type][year][category]['value'][k]/10**3)/gdp[str(year)])*100
                 tax_dict[tax_type][year][category]['value_gdp_str'][k] = '{0:.2f}'.format(tax_dict[tax_type][year][category]['value_gdp'][k])  
     #print('tax_dict ', tax_dict)
     return tax_dict
@@ -186,7 +186,7 @@ def generate_tax_expenditures():
         #display_table(window, header=True)
         # Adjust this for number of years selected
         header = ["header","Tax Incentive", "Current Law", "Benchmark", "Tax Expenditure"]
-        title_header = [["title", tax_type.upper()+" Expenditure (billions)"],
+        title_header = [["title", tax_type.upper()+" Expenditure (thousands)"],
                         header]
         if percent_gdp:
             title_header = [["title", tax_type.upper()+" Expenditure (% of GDP)"],

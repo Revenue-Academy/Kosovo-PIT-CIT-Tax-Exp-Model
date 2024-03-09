@@ -54,7 +54,8 @@ def tab3(self, tax_type):
     pos_x = [0.1, 0.4, 0.67]
     for tax_type in self.tax_list:
         self.vars[tax_type+'_adjust_behavior'] = 0
-    self.vars['sst'+'_adjust_behavior'] = 0    
+    self.vars['sst'+'_adjust_behavior'] = 0  
+    self.vars['tot'+'_adjust_behavior'] = 0  
     self.block_elasticity_pos_x = self.allocate_pos_x(pos_x, self.status,
                                                     self.block_elasticity_pos_x)
 

@@ -12,7 +12,7 @@ from tkinter import *
 def display_table(window, data=None, header=None, year=None, row=None, footer=None, all=None, dataframe=None):
     
     def check_span(row_list):
-        #print(row_list)
+        print('row_list in check span', row_list)
         span_list = [1 for x in row_list]
         i=0
         while i<len(row_list):
@@ -30,28 +30,33 @@ def display_table(window, data=None, header=None, year=None, row=None, footer=No
                     break
             i=j
 
-        #print(len(row_list))
-        #print(span_list)
+        print(len(row_list))
+        print(span_list)
         return span_list
     # Display the results in a popup window
     # popup window for the Results but only one time after first 
     # set of results start coming in
     fontStyle_sub_title = tkfont.Font(root=window, family="Calibri", size="14", weight="bold")         
    
+    ''' row_list has a structure of [['title', ' Projections (billions)'], ['header', 'Year', 'Current Law', 'Reform', 'Diff']]
+        Thus, row_list[row_num][0] shoule be read as 'title' when row_num = 0 and as 'header' when row_num = 1
+        data[0][1:] = ' Projections (billions)' and data[1][1:] = ['Year', 'Current Law', 'Reform', 'Diff']
+    '''
     #l={}
     if header:
         row_num=0
-        row_index = data[row_num][0]
-        row_list = data[row_num][1:]
+        row_index = data[row_num][0]    #read this as 'title'
+        row_list = data[row_num][1:]    #read this as ['Year', 'Current Law', 'Reform', 'Diff']
+        print('data used in row list in display table', row_list)
         check_span(row_list)
         if (row_index=="title"):
             tk.Label0 = tk.Label(window, text="", font=fontStyle_sub_title)
             tk.Label0.grid(row=0, column=0, sticky=tk.NSEW, padx=20)
-            tk.Label1 = tk.Label(window, text=row_list[0], font=fontStyle_sub_title)
+            tk.Label1 = tk.Label(window, text=row_list[0], font=fontStyle_sub_title)   #read row_list[0] as " Projections (billions)"
             tk.Label1.grid(row=0, column=2, columnspan=5)
         row_num=1
-        row_index = data[row_num][0]
-        row_list = data[row_num][1:]
+        row_index = data[row_num][0]   # read this as row_index = 'header'
+        row_list = data[row_num][1:]   # read this as row_list = ['Year', 'Current Law', 'Reform', 'Diff']
         while (row_index=="header") :
             span_list = check_span(row_list)
             l = tk.Label(window, text="", padx=20)
@@ -77,7 +82,7 @@ def display_table(window, data=None, header=None, year=None, row=None, footer=No
             l = tk.Label(window, text="", padx=20)
             l.grid(row=row_num, column=0)
             row_list = data[i]
-            #print(row_list)
+           
             for j in range(len(row_list)):
                 l = tk.Label(window, text=row_list[j], relief=RIDGE, font=fontStyle_sub_title)
                 l.grid(row=row_num, column=j+1, sticky=tk.NSEW)
@@ -86,12 +91,14 @@ def display_table(window, data=None, header=None, year=None, row=None, footer=No
         
     if row is not None:
         row_num = row 
+        print('row_num', row_num)
         l = tk.Label(window, text="", padx=20)
         l.grid(row=row_num, column=0)
         for j in range(len(data)):
             l = tk.Label(window, text=data[j], relief=RIDGE, font=fontStyle_sub_title)
             l.grid(row=row_num, column=j+1, sticky=tk.NSEW)
         row_num = row_num+1
+        print('row_num after end', row_num)
         
     if footer is not None:
         row_num=footer

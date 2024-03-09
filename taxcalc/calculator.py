@@ -334,8 +334,11 @@ class Calculator(object):
             #bf_loss1 = self.__records.newloss1
             print('cf loss old is ', bf_loss)
             cl_wdv = {}
-            for var in self.CROSS_YEAR_VARS:
-                cl_wdv[var] = getattr(self.__corprecords, 'Cl'+var[2:])
+            if self.CROSS_YEAR_VARS:
+                for var in self.CROSS_YEAR_VARS:
+                    cl_wdv[var] = getattr(self.__corprecords, 'Cl'+var[2:])
+            else:
+                pass
             print('cl wdv is ', cl_wdv)
         #cl_wdv_bld = self.__records.Cl_WDV_Bld
 
@@ -356,8 +359,12 @@ class Calculator(object):
                 setattr(self.__corprecords, 'Loss_lag'+str(i), bf_loss[i])                 
             #self.__records.Loss_lag1 = bf_loss1
             print('bf loss lag 1 is ', self.__corprecords.Loss_lag1)
-            for var in self.CROSS_YEAR_VARS:
-                setattr(self.__corprecords, 'Op'+var, cl_wdv[var])
+            if self.CROSS_YEAR_VARS:
+                    for var in self.CROSS_YEAR_VARS:
+                        setattr(self.__corprecords, 'Op'+var, cl_wdv[var])
+            else:
+                pass
+            
             print('op wdv is ', cl_wdv)
         #self.__records.Op_WDV_Bld = cl_wdv_bld   
         #self.__records.increment_year()
@@ -552,7 +559,15 @@ class Calculator(object):
                 (attribute_types, attribute_data)  = self.get_attribute_types('pit', 0)             
             else:
                 msg = 'tax type record ="{}" is not initialized'
-                raise ValueError(msg.format(tax_type))        
+                raise ValueError(msg.format(tax_type))
+        elif tax_type == 'tot':
+            if self.corprecords is not None:
+                tax_data = self.carray(variable_name)
+                attribute_var = self.ATTRIBUTE_READ_VARS_CIT                              
+                (attribute_types, attribute_data)  = self.get_attribute_types('cit', 0)             
+            else:
+                msg = 'tax type record ="{}" is not initialized'
+                raise ValueError(msg.format(tax_type))      
         elif tax_type == 'cit':
             if self.corprecords is not None:            
                 tax_data = self.carray(variable_name)
@@ -583,6 +598,9 @@ class Calculator(object):
         elif tax_type == 'cit':
             wtd_total_tax = {}
             wtd_total_tax['All'] = (tax_data * self.carray('weight')).sum()
+        elif tax_type == 'tot':
+            wtd_total_tax = {}
+            wtd_total_tax['All'] = (tax_data * self.carray('weight')).sum() 
 
         # We have  calculated for 'All' so no need to calculate further
         attribute_types.remove('All')
@@ -697,6 +715,15 @@ class Calculator(object):
                 else:
                         return self.dataframe(DIST_VARIABLES)            
         elif tax_type == 'cit':
+            if self.corprecords is not None:
+                if attribute_var is not None:
+                    if attribute_value == 'All':
+                        return self.dataframe_cit(DIST_VARIABLES)
+                    else:
+                        return self.dataframe_cit(DIST_VARIABLES, attribute_value, attribute_var)
+                else:
+                        return self.dataframe_cit(DIST_VARIABLES)
+        elif tax_type == 'tot':
             if self.corprecords is not None:
                 if attribute_var is not None:
                     if attribute_value == 'All':

@@ -1,5 +1,7 @@
 {
     "policy": {
-    "_toggle_charitable": {"2022": [0]}
+    "_rate_ded_charitable": {"2022": [0]},
+     "_rate_ded_rent": {"2022": [0]}
+    
     }
 }

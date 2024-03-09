@@ -1,0 +1,31 @@
+{
+  "0": "calc_totadjinc_l11_l15_fun",
+  "1": "calc_profitloss_afteradjinc_fun",
+  "2": "calc_totadjexp_l18_l26_fun",
+  "3": "calc_proflossaftadjexp_l17_l27_fun",
+  "4": "calc_charitycontrib_box28_fun",
+  "5": "calc_add_l29_l30_fun",
+  "6": "calc_adjprofit_l28_l31_fun",
+  "7": "calc_corpinctax_l32_fun",
+  "8": "corpinctax_insurcomp_fun",
+  "9": "calc_corpinctax_total_fun",
+  "10": "calc_totcredits_l37_l38_fun",
+  "11": "calc_l36_minus_l39_fun",
+  "12": "calc_sportspodisc_fun",
+  "13": "calc_cul_youths_disc_fun",
+  "14": "calc_total_sponsorship_fun",
+  "15": "calc_taxpaywithform_fun",
+  "16": "calc_total_l61_l62_fun",
+  "17": "calc_costofgoodssold_l63_l64_fun",
+  "18": "calc_grossprofit_l60_l65_fun",
+  "19": "calc_totalopexp_l67_l72_fun",
+  "20": "calc_profitloss_oper_l66_l73_fun",
+  "21": "calc_profitloss_nonopact_l75_l76_fun",
+  "22": "calc_netprofitloss_l74_l77_fun", 
+  "23": "calc_tqi_3pct_fun",
+  "24": "calc_tqi_9pct_fun",
+  "25": "calc_tot_amount_3pct_9pct_fun",
+  "26": "cit_liability"
+}
+
+

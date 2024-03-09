@@ -23,80 +23,116 @@ I. PROFIT TAX CALCULATION
 
 # [16] Total adjustment to income (add lines [11] to [15])
 @iterate_jit(nopython=True)
-def calc_totadjinc_l11_l15_fun(forsourceincsch_a,recbaddebts_sch_b,capgain_sch_c,div_sch_d,otherincgain_sch_e,calc_totadjinc_l11_l15):
-    calc_totadjinc_l11_l15 =  forsourceincsch_a + recbaddebts_sch_b+capgain_sch_c+div_sch_d+otherincgain_sch_e
+def calc_totadjinc_l11_l15_fun(forsourceincsch_a,recbaddebts_sch_b,capgain_sch_c,div_sch_d,otherincgain_sch_e, totadjinc_l11_l15, calc_totadjinc_l11_l15):
+    calc_totadjinc_l11_l15 =  forsourceincsch_a + recbaddebts_sch_b + capgain_sch_c + div_sch_d+otherincgain_sch_e
+    calc_totadjinc_l11_l15 = totadjinc_l11_l15
     return calc_totadjinc_l11_l15
+
+# # 17 [Profit (loss) after adjustment to income (line [10] + line [16])
+# @iterate_jit(nopython=True)
+# def calc_profitloss_afteradjinc_fun(netprofit_fd,calc_totadjinc_l11_l15, profitloss_afteradjinc, calc_profitloss_afteradjinc):
+#     calc_profitloss_afteradjinc =  netprofit_fd + calc_totadjinc_l11_l15
+#     calc_profitloss_afteradjinc = profitloss_afteradjinc
+#     return calc_profitloss_afteradjinc
 
 # 17 [Profit (loss) after adjustment to income (line [10] + line [16])
 @iterate_jit(nopython=True)
-def calc_profitloss_afteradjinc_fun(netprofit_fd,calc_totadjinc_l11_l15,calc_profitloss_afteradjinc):
-    calc_profitloss_afteradjinc =  netprofit_fd + calc_totadjinc_l11_l15
+def calc_profitloss_afteradjinc_fun(profitloss_afteradjinc, calc_profitloss_afteradjinc):
+    calc_profitloss_afteradjinc = profitloss_afteradjinc
     return calc_profitloss_afteradjinc
-
 
 '''
 2. Adjustments to Expenses (mostly negative numbers shown in brackets - except line 24)
 '''
 # 27. Total adjustment to expenses (add lines [18] to [26]).
 @iterate_jit(nopython=True)
-def calc_totadjexp_l18_l26_fun(disallowedexp_sch_f,repcosts_sch_g,reservefunds_sch_h,paymrelper_sch_i,
+def calc_totadjexp_l18_l26_fun(rate_spl_all, disallowedexp_sch_f,repcosts_sch_g,reservefunds_sch_h,paymrelper_sch_i,
         amort_sch_j,dep_sch_k,specallownewassets_sch_l,caploss_sch_c,otherexp_sch_m,calc_totadjexp_l18_l26):    
-    calc_totadjexp_l18_l26 =  disallowedexp_sch_f+repcosts_sch_g+reservefunds_sch_h+paymrelper_sch_i+amort_sch_j+dep_sch_k+specallownewassets_sch_l+caploss_sch_c+otherexp_sch_m
+    calc_totadjexp_l18_l26 =  disallowedexp_sch_f + repcosts_sch_g + reservefunds_sch_h + paymrelper_sch_i + amort_sch_j + \
+                              dep_sch_k + specallownewassets_sch_l * rate_spl_all + caploss_sch_c + otherexp_sch_m
     return calc_totadjexp_l18_l26
 
 # [28] Profit (loss) of business after adjustment to expenses (line [17]- line [27]), (When line 27 is in brackets add the whole numbers)
 
 @iterate_jit(nopython=True)
-def calc_proflossaftadjexp_l17_l27_fun(calc_profitloss_afteradjinc,calc_totadjexp_l18_l26):
+def calc_proflossaftadjexp_l17_l27_fun(calc_profitloss_afteradjinc, calc_totadjexp_l18_l26, calc_grossinc):
     #calc_proflossaftadjexp_l17_l27 =   calc_totadjexp_l18_l26 - calc_profitloss_afteradjinc
-    calc_proflossaftadjexp_l17_l27 =   calc_profitloss_afteradjinc-calc_totadjexp_l18_l26
-    return calc_proflossaftadjexp_l17_l27
+    calc_grossinc =   calc_profitloss_afteradjinc - calc_totadjexp_l18_l26
+    return calc_grossinc
+
 
 # 29. Charitable contributions (attach receipts), (limit of 5% of line 28)
 @iterate_jit(nopython=True)
-def calc_charitycontrib_box28_fun(charitycontrib_box28, toggle_charitable,calc_charitycontrib_box28):
-    calc_charitycontrib_box28 = charitycontrib_box28 * toggle_charitable
+def calc_charitycontrib_box28_fun(rate_max_charitable_ded,  calc_grossinc, charitycontrib_box28, calc_charitycontrib_box28):
+    calc_charitycontrib_box28 = min(charitycontrib_box28, max(rate_max_charitable_ded*calc_grossinc, 0))
     return calc_charitycontrib_box28
+
+@iterate_jit(nopython=True)
+def calc_gti_fun(calc_grossinc, calc_charitycontrib_box28, calc_gti):
+    calc_gti =   calc_grossinc - calc_charitycontrib_box28
+    return calc_gti
 
 # 31.Add lines [29] and [30]
 @iterate_jit(nopython=True)
-def calc_add_l29_l30_fun(calc_charitycontrib_box28,losscarryforward,calc_add_l29_l30):
-    calc_add_l29_l30 =  calc_charitycontrib_box28 + losscarryforward
-    return calc_add_l29_l30
+def calc_loss_adj_fun(calc_gti,Loss_lag1, newloss1, calc_nti):
+    if calc_gti < 0:
+            newloss1 = Loss_lag1 + calc_gti
+            calc_nti = 0
+    else:
+            used_loss = min(abs(Loss_lag1), calc_gti)
+            newloss1 = Loss_lag1 - used_loss
+            calc_nti = calc_gti - used_loss
+    return (calc_nti, newloss1)
+    # BF_loss = np.array([Loss_lag1])
+    # Gross_Tax_base = calc_gti
+    # N = int(Loss_CFLimit)
+    # if N == 0:
+    #     newloss1 = np.zeros(0)
+    #     calc_nti = calc_gti
+        
+    # else:
+    #     BF_loss = BF_loss[:N]
+    #     if Gross_Tax_base < 0:
+    #         CYL = abs(Gross_Tax_base)
+    #         Used_loss = np.zeros(N)
+    #     elif Gross_Tax_base >= 0:
+    #         CYL = 0
+    #         Cum_used_loss = 0
+    #         Used_loss = np.zeros(N)
+    #         for i in range(N, 0, -1):
+    #             GTI = Gross_Tax_base - Cum_used_loss
+    #             Used_loss[i-1] = min(BF_loss[i-1], GTI)
+    #             Cum_used_loss += Used_loss[i-1]
+    #     newloss1 = BF_loss - Used_loss
+    #     calc_nti = Gross_Tax_base - Used_loss.sum()
+            
+    
 
-# 32. Adjusted profit (line [28]- line [31])
-@iterate_jit(nopython=True)
-def calc_adjprofit_l28_l31_fun(calc_proflossaftadjexp_l17_l27,calc_add_l29_l30,calc_adjprofit_l28_l31):
-    calc_adjprofit_l28_l31 =  calc_proflossaftadjexp_l17_l27 - calc_add_l29_l30
-    return calc_adjprofit_l28_l31
 
 # 33.Corporate income tax (If line 32 is a profit, multiply by 10%. If line [32] is a loss, enter 0)
 @iterate_jit(nopython=True)
-def calc_corpinctax_l32_fun(calc_adjprofit_l28_l31,cit_rate,calc_corpinctax_l32):
-    calc_corpinctax_l32 =  calc_adjprofit_l28_l31 * cit_rate
-    return calc_corpinctax_l32
+def calc_citax_non_insurance_fun(calc_nti, cit_rate, citax_non_insurance):
+    citax_non_insurance =  max(calc_nti * cit_rate, 0)
+    return citax_non_insurance
 
 """  For Insurance Companies only"""
 
 # [35] Corporate Income Tax for Insurance Companies ( [34] * 5%)
 # Double check this amount again
 @iterate_jit(nopython=True)
-def corpinctax_insurcomp_fun(gross_prem,cit_rate_ins,calc_corpinctax_insurcomp):
-    calc_corpinctax_insurcomp =  gross_prem * cit_rate_ins
-    return calc_corpinctax_insurcomp
+def corpinctax_insurcomp_fun(gross_prem,cit_rate_ins,citax_insurance):
+    citax_insurance =  max(gross_prem * cit_rate_ins, 0)
+    return citax_insurance
 
+@iterate_jit(nopython=True)
+def calc_citax_large_fun(citax_non_insurance, citax_insurance, citax_large):
+    citax_large =  citax_non_insurance + citax_insurance
+    return citax_large
 
 """
 Refund or Amount Due
 
 """
-
-# 36.Corporate Income Tax (add the amounts in the line [33] and [35] according to your situation)
-@iterate_jit(nopython=True)
-def calc_corpinctax_total_fun(calc_corpinctax_l32,calc_corpinctax_insurcomp,calc_corpinctax_total):
-    calc_corpinctax_total =  calc_corpinctax_l32 + calc_corpinctax_insurcomp
-    return calc_corpinctax_total
-
 
 #  [39] Total Credits for the period [37] +[38]
 @iterate_jit(nopython=True)
@@ -106,26 +142,22 @@ def calc_totcredits_l37_l38_fun(forstattaxcredit_sch_o,taxwithheld_sch_p,calc_to
 
 #  [40] Line [36] less [39]
 @iterate_jit(nopython=True)
-def calc_l36_minus_l39_fun(calc_corpinctax_total, calc_totcredits_l37_l38,calc_l36_minus_l39):    
-    if calc_corpinctax_total == 0:
-        #return 0
-        return calc_corpinctax_total
-    else:
-        calc_l36_minus_l39 = calc_corpinctax_total - calc_totcredits_l37_l38
-        return calc_l36_minus_l39
+def calc_l36_minus_l39_fun(citax_large, calc_totcredits_l37_l38,calc_l36_minus_l39):    
+    calc_l36_minus_l39 = max(0, citax_large - calc_totcredits_l37_l38)
+    return calc_l36_minus_l39
     
     
 # [43] Discounts for sponsorship in the field of sports (max.30% of the box [42]
 @iterate_jit(nopython=True)
-def calc_sportspodisc_fun(sportspodisc_max30pct_box42, toggle_sport,calc_sportspodisc_max30pct_box42):
-    calc_sportspodisc_max30pct_box42 = sportspodisc_max30pct_box42 * toggle_sport
+def calc_sportspodisc_fun(rate_ded_sponsorship, citax_large, sportspodisc_max30pct_box42, calc_sportspodisc_max30pct_box42):
+    calc_sportspodisc_max30pct_box42 = min(sportspodisc_max30pct_box42, rate_ded_sponsorship * citax_large)
+    #calc_sportspodisc_max30pct_box42 = sportspodisc_max30pct_box42 * rate_ded_sponsorship
     return calc_sportspodisc_max30pct_box42
-
 
 #	44 Discounts for sponsorship in the field of Culture and Youth (Max. 20% of Box [42]
 @iterate_jit(nopython=True)
-def calc_cul_youths_disc_fun(culyouthspodisc_max20pct_box42, toggle_culture_youth,calc_culyouthspodisc_max20pct_box42):
-    calc_culyouthspodisc_max20pct_box42= culyouthspodisc_max20pct_box42 * toggle_culture_youth
+def calc_cul_youths_disc_fun(rate_ded_culture_youth, citax_large, culyouthspodisc_max20pct_box42,calc_culyouthspodisc_max20pct_box42):
+    calc_culyouthspodisc_max20pct_box42= min(culyouthspodisc_max20pct_box42, rate_ded_culture_youth * citax_large)
     return calc_culyouthspodisc_max20pct_box42
 
 
@@ -139,59 +171,55 @@ def calc_total_sponsorship_fun(calc_sportspodisc_max30pct_box42, calc_culyouthsp
 # Double check this again !
 
 @iterate_jit(nopython=True)
-def calc_taxpaywithform_fun(calc_corpinctax_total, calc_totcredits_l37_l38, installmentspaid_sch_q, calc_totalspodisc_max30pct_box42,calc_taxpaywithform):    
-    calc = (calc_corpinctax_total - calc_totcredits_l37_l38 - installmentspaid_sch_q - calc_totalspodisc_max30pct_box42)
-    if calc <= 0:
-        calc_taxpaywithform = 0
-    else:
-        calc_taxpaywithform = calc_corpinctax_total
-    return calc_taxpaywithform
+def calc_citax_fun(citax_large, calc_totalspodisc_max30pct_box42, citax):    
+    citax = max(citax_large - calc_totalspodisc_max30pct_box42, 0)
+    return citax
 
 
- # D63	Total ([61] + [62])
-@iterate_jit(nopython=True)
-def calc_total_l61_l62_fun(openinginv,costofprod,calc_total_l61_l62):
-    calc_total_l61_l62 =  openinginv + costofprod
-    return calc_total_l61_l62
+#  # D63	Total ([61] + [62])
+# @iterate_jit(nopython=True)
+# def calc_total_l61_l62_fun(openinginv,costofprod,calc_total_l61_l62):
+#     calc_total_l61_l62 =  openinginv + costofprod
+#     return calc_total_l61_l62
 
 
-# D65	Cost of goods sold ([63]-[64])
-@iterate_jit(nopython=True)
-def calc_costofgoodssold_l63_l64_fun(calc_total_l61_l62,endinginventory,calc_costofgoodssold_l63_l64):
-    calc_costofgoodssold_l63_l64 =  calc_total_l61_l62 - endinginventory
-    return calc_costofgoodssold_l63_l64
+# # D65	Cost of goods sold ([63]-[64])
+# @iterate_jit(nopython=True)
+# def calc_costofgoodssold_l63_l64_fun(calc_total_l61_l62,endinginventory,calc_costofgoodssold_l63_l64):
+#     calc_costofgoodssold_l63_l64 =  calc_total_l61_l62 - endinginventory
+#     return calc_costofgoodssold_l63_l64
 
 
-# [66] Gross profit ([60]-[65])
-@iterate_jit(nopython=True)
-def calc_grossprofit_l60_l65_fun(grossinc,costofgoodssold_l63_l64,calc_grossprofit_l60_l65):
-    calc_grossprofit_l60_l65 =  grossinc - costofgoodssold_l63_l64
-    return calc_grossprofit_l60_l65
+# # [66] Gross profit ([60]-[65])
+# @iterate_jit(nopython=True)
+# def calc_grossprofit_l60_l65_fun(grossinc,costofgoodssold_l63_l64,calc_grossprofit_l60_l65):
+#     calc_grossprofit_l60_l65 =  grossinc - costofgoodssold_l63_l64
+#     return calc_grossprofit_l60_l65
 
 
-# [73] Total operating expenses (Add [67] through [72])
-@iterate_jit(nopython=True)
-def calc_totalopexp_l67_l72_fun(grosswages,depamortexp_notincost,sellingexp,genadminexp_notincost,rnd_costs,otheropexp,calc_totalopexp_l67_l72):
-    calc_totalopexp_l67_l72 =  grosswages+depamortexp_notincost+sellingexp+genadminexp_notincost+rnd_costs+otheropexp
-    return calc_totalopexp_l67_l72
+# # [73] Total operating expenses (Add [67] through [72])
+# @iterate_jit(nopython=True)
+# def calc_totalopexp_l67_l72_fun(grosswages,depamortexp_notincost,sellingexp,genadminexp_notincost,rnd_costs,otheropexp,calc_totalopexp_l67_l72):
+#     calc_totalopexp_l67_l72 =  grosswages+depamortexp_notincost+sellingexp+genadminexp_notincost+rnd_costs+otheropexp
+#     return calc_totalopexp_l67_l72
 
-# D74	PROFIT/LOSS FROM OPERATIONS ([66] - [73])
-@iterate_jit(nopython=True)
-def calc_profitloss_oper_l66_l73_fun(calc_grossprofit_l60_l65,calc_totalopexp_l67_l72,calc_profitloss_oper_l66_l73):
-    calc_profitloss_oper_l66_l73 = calc_grossprofit_l60_l65-calc_totalopexp_l67_l72
-    return calc_profitloss_oper_l66_l73
+# # D74	PROFIT/LOSS FROM OPERATIONS ([66] - [73])
+# @iterate_jit(nopython=True)
+# def calc_profitloss_oper_l66_l73_fun(calc_grossprofit_l60_l65,calc_totalopexp_l67_l72,calc_profitloss_oper_l66_l73):
+#     calc_profitloss_oper_l66_l73 = calc_grossprofit_l60_l65-calc_totalopexp_l67_l72
+#     return calc_profitloss_oper_l66_l73
 
-# D77	PROFIT/LOSS FROM NON-OPERATING ACTIVITIES ([75] - [76])
-@iterate_jit(nopython=True)
-def calc_profitloss_nonopact_l75_l76_fun(otherrevgains,otherexploss,calc_profitloss_nonopact_l75_l76):
-    calc_profitloss_nonopact_l75_l76 = otherrevgains-otherexploss
-    return calc_profitloss_nonopact_l75_l76
+# # D77	PROFIT/LOSS FROM NON-OPERATING ACTIVITIES ([75] - [76])
+# @iterate_jit(nopython=True)
+# def calc_profitloss_nonopact_l75_l76_fun(otherrevgains,otherexploss,calc_profitloss_nonopact_l75_l76):
+#     calc_profitloss_nonopact_l75_l76 = otherrevgains-otherexploss
+#     return calc_profitloss_nonopact_l75_l76
 
-# D78	Net profit (Loss) ([74] + [77])
-@iterate_jit(nopython=True)
-def calc_netprofitloss_l74_l77_fun(calc_profitloss_oper_l66_l73,calc_profitloss_nonopact_l75_l76):
-    calc_netprofitloss_l74_l77 = calc_profitloss_oper_l66_l73+calc_profitloss_nonopact_l75_l76
-    return calc_netprofitloss_l74_l77
+# # D78	Net profit (Loss) ([74] + [77])
+# @iterate_jit(nopython=True)
+# def calc_netprofitloss_l74_l77_fun(calc_profitloss_oper_l66_l73,calc_profitloss_nonopact_l75_l76):
+#     calc_netprofitloss_l74_l77 = calc_profitloss_oper_l66_l73+calc_profitloss_nonopact_l75_l76
+#     return calc_netprofitloss_l74_l77
 
 
 '''
@@ -221,25 +249,40 @@ def calc_tqi_9pct_fun(g_inc_q,rate_small_service_prof,calc_tqi_9pct):
 #  [12] Amount for payment in this statement [10]+[11] , but not less than 37.50 euro
 
 @iterate_jit(nopython=True)
-def calc_tot_amount_3pct_9pct_fun(calc_tqi_3pct,calc_tqi_9pct,min_payment,calc_tot_amount_3pct_9pct):
+def calc_tot_amount_3pct_9pct_fun(calc_tqi_3pct,calc_tqi_9pct,min_payment_small,calc_tot_amount_3pct_9pct):
     calc_tot_amount_3pct_9pct= calc_tqi_3pct + calc_tqi_9pct
-    
-    if calc_tot_amount_3pct_9pct  <=  min_payment:
-        calc_tot_amount_3pct_9pct = min_payment
-        return calc_tot_amount_3pct_9pct
-    else:
-        calc_tot_amount_3pct_9pct=calc_tot_amount_3pct_9pct
-        return (calc_tot_amount_3pct_9pct)
+    calc_tot_amount_3pct_9pct = max(min_payment_small, max(calc_tot_amount_3pct_9pct, 0))
+    return (calc_tot_amount_3pct_9pct)
+
+
+#  [16] Amount for payment in this statement [14] - [15]
+
+@iterate_jit(nopython=True)
+def calc_rental_inc_fun(gross_inc_rent, rate_tax_rent, rent_tax_held_oth, calc_rent_tax):
+    calc_rent_tax = max(gross_inc_rent * rate_tax_rent - rent_tax_held_oth, 0)
+    return (calc_rent_tax)
+
+#  [17] Total tax Small Corporate
+
+@iterate_jit(nopython=True)
+def calc_citax_small_fun(calc_rent_tax,calc_tot_amount_3pct_9pct,totax):
+    totax = (calc_tot_amount_3pct_9pct + calc_rent_tax)*4
+    return totax
+
+
+@iterate_jit(nopython=True)
+def calc_turnover_small_fun(g_inc_q,g_inc_spcel, calc_turnover_small):
+    calc_turnover_small = (g_inc_q + g_inc_spcel)*4
+    return calc_turnover_small
 
 """
 Total tax large plus micro
 
-"""
-@iterate_jit(nopython=True)
-def cit_liability(calc_taxpaywithform,calc_tot_amount_3pct_9pct,citax):
-    citax = calc_taxpaywithform+calc_tot_amount_3pct_9pct
-    return citax
-
+# """
+# @iterate_jit(nopython=True)
+# def calc_citax_fun(calc_citax_large_net,citax_small, citax):
+#     citax = calc_citax_large_net + citax_small
+#     return citax
 
 # Test
 # @iterate_jit(nopython=True)
