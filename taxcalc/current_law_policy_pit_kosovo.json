@@ -174,7 +174,7 @@
          "out_of_range_maxmsg": "",
          "out_of_range_action": "stop"
      },
-_rate_ded_rent": {
+    "_rate_ded_rent": {
           "long_name": " Rate of deduction from gross rents",
           "description": " ",
           "itr_ref": " ",
@@ -199,7 +199,7 @@ _rate_ded_rent": {
           "out_of_range_maxmsg": "",
           "out_of_range_action": "stop"
       },
-"_rate_ded_charitable": {
+    "_rate_ded_charitable": {
           "long_name": " ",
            "description": " ",
            "itr_ref": " ",

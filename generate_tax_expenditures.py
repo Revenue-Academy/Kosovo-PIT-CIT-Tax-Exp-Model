@@ -58,17 +58,14 @@ def concat_dicts(block_selected_dict, elasticity_dict):
 
 def write_file(df, text_data, filename, window=None, footer_row_num=None):
     df.to_csv(filename+'.csv', mode='w')
-    # a = open(filename+'.csv','w')
-    # a.write("\n")
-    # a.write("\n")
-    # a.close
     with open(filename+'.txt','w') as f:
         f.write(text_data)
     f.close
     if (window is not None) and (footer_row_num is not None):
         footer = ["footer", "*Data saved in file "+ filename]
         display_table(window, data=footer, footer=footer_row_num+2)
-    
+
+''' This function store the weighted total tax collection in billions in a dictionary called tax_dict '''
 def weighted_total_tax(calc, tax_list, category, year, tax_dict, gdp=None, attribute_var = None):
     for tax_type in tax_list:
         tax_dict[tax_type][year][category] = {}
@@ -197,17 +194,14 @@ def generate_tax_expenditures():
     calc1.calc_all()    
     revenue_dict0 = weighted_total_tax(calc1, tax_list, 'current_law', year, revenue_dict, GDP_Nominal, attribute_var)
     np.seterr(divide='ignore', invalid='ignore')
-    #pol2 = Policy()
-    #reform = Calculator.read_json_param_objects(global_variables['pit_benchmark_filename'], None)  
-    reform = Calculator.read_json_param_objects(global_variables['cit_benchmark_filename'], None)  
+   
+    reform = Calculator.read_json_param_objects(global_variables[tax_type + '_benchmark_filename'], None)  
     ref_dict = reform['policy']
     var_list = []
     tax_expenditure_var_list = []
     year=start_year
     
     for pkey, sdict in ref_dict.items():
-            #print(f'pkey: {pkey}')
-            #print(f'sdict: {sdict}')
             for k, s in sdict.items():
                 reform.pop("policy")
                 mydict={}
@@ -215,9 +209,6 @@ def generate_tax_expenditures():
                 mydict0={}
                 mydict0[pkey]=mydict
                 reform['policy']=mydict0
-                #print('reform:', reform)
-                #print(f'k: {k}')
-                #print(f's: {s}')
                 pol2 = Policy()
                 pol2.implement_reform(reform['policy'])
                 calc2 = Calculator(policy=pol2, records=recs, corprecords=crecs, gstrecords=grecs, verbose=verbose)
