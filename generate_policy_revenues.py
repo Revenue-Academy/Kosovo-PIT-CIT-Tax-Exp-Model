@@ -707,9 +707,9 @@ def generate_policy_revenues():
     
         dt_tax_all12 = dt_tax_all12.reset_index()
         dt_tax_all34 = dt_tax_all34.reset_index()
+        #dt_tax_all12.head().style.format("{:,.0f}") 
+        #dt_tax_all34.head().style.format("{:,.0f}")
         
-        #print('dt_tax_all34', dt_tax_all34)
-    
         # dt_tax_all12 = pd.DataFrame.from_dict(dt_tax_all12[tax_type])
         # dt_tax_all12.insert(0, 'Dist_var', dt_tax_all12.index)
         # dt_tax_all34 = pd.DataFrame.from_dict(dt_tax_all34[tax_type])

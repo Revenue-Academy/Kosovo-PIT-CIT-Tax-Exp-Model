@@ -129,7 +129,7 @@ def initialize_vars(self):
     self.vars['kakwani_list'] = []
     
     self.vars['start_year'] = 2022
-    self.vars['end_year']=2028
+    self.vars['end_year']=2026
     self.vars['pit_data_start_year'] = 2022
     self.vars['cit_data_start_year'] = 2022
 

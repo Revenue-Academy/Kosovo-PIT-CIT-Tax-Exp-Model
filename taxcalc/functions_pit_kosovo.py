@@ -56,7 +56,7 @@ def charity_contribution_fun(rate_ded_charitable, dis_charity_contribution, calc
 # D28	Total Additional Deductions (26+27)
 @iterate_jit(nopython=True)
 def tot_additional_ded_fun(calc_charity_contribution,loss_carried_for,calc_tot_additional_ded):
-    calc_tot_additional_ded =  calc_charity_contribution+loss_carried_for
+    calc_tot_additional_ded =  calc_charity_contribution + loss_carried_for
     return calc_tot_additional_ded
 
 
@@ -65,7 +65,6 @@ def tot_additional_ded_fun(calc_charity_contribution,loss_carried_for,calc_tot_a
 def taxable_inc_before_tax_fun(calc_gti,calc_tot_additional_ded,calc_taxable_inc_before_tax):
     calc_taxable_inc_before_tax =  calc_gti - calc_tot_additional_ded
     return calc_taxable_inc_before_tax
-
 
 # D30 Tax on Taxable Income as per tax brackets 
 @iterate_jit(nopython=True)
