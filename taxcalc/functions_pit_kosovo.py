@@ -10,7 +10,6 @@ import copy
 import numpy as np
 from taxcalc.decorators import iterate_jit
 
-
 '''
 -------------------------------------------------------------------------------------
 I. PERSONAL INCOME TAX CALCULATION
@@ -47,7 +46,7 @@ def taxable_amount_fun(calc_total_inc,calc_total_ded,calc_gti):
     calc_gti =  calc_total_inc-calc_total_ded
     return calc_gti
 
-# D27 Deduction for Charitable Contributions (max 5% of taxable amount).not claimed on FS
+# D27 Deduction for Charitable Contributions (max 5% of taxable amount) not claimed on FS
 @iterate_jit(nopython=True)
 def charity_contribution_fun(rate_ded_charitable, dis_charity_contribution, calc_gti, calc_charity_contribution):
     calc_charity_contribution = min(dis_charity_contribution, max(calc_gti * rate_ded_charitable, 0))
@@ -57,23 +56,22 @@ def charity_contribution_fun(rate_ded_charitable, dis_charity_contribution, calc
 # D28	Total Additional Deductions (26+27)
 @iterate_jit(nopython=True)
 def tot_additional_ded_fun(calc_charity_contribution,loss_carried_for,calc_tot_additional_ded):
-    calc_tot_additional_ded =  calc_charity_contribution+loss_carried_for
+    calc_tot_additional_ded =  calc_charity_contribution + loss_carried_for
     return calc_tot_additional_ded
 
 
-# D29 Taxable Income before tax [25]-[28] (if negative put the amount in brackets)
+# D29 Taxable Income before tax [25]-[28]
 @iterate_jit(nopython=True)
 def taxable_inc_before_tax_fun(calc_gti,calc_tot_additional_ded,calc_taxable_inc_before_tax):
     calc_taxable_inc_before_tax =  calc_gti - calc_tot_additional_ded
     return calc_taxable_inc_before_tax
 
-
 # D30 Tax on Taxable Income as per tax brackets 
 @iterate_jit(nopython=True)
-def tax_on_tax_inc_bracket_fun(taxable_inc_before_tax, rate1, rate2, rate3, rate4, tbrk1, tbrk2, tbrk3,pitax):
-    pitax = (rate1 * min(taxable_inc_before_tax, tbrk1) +
-                    rate2 * min(tbrk2 - tbrk1, max(0., taxable_inc_before_tax - tbrk1)) +
-                    rate3 * min(tbrk3 - tbrk2, max(0., taxable_inc_before_tax - tbrk2)) +
-                    rate4 * max(0., taxable_inc_before_tax - tbrk3))
+def tax_on_tax_inc_bracket_fun(calc_taxable_inc_before_tax, rate1, rate2, rate3, rate4, tbrk1, tbrk2, tbrk3,pitax):
+    pitax = (rate1 * min(calc_taxable_inc_before_tax, tbrk1) +
+                    rate2 * min(tbrk2 - tbrk1, max(0., calc_taxable_inc_before_tax - tbrk1)) +
+                    rate3 * min(tbrk3 - tbrk2, max(0., calc_taxable_inc_before_tax - tbrk2)) +
+                    rate4 * max(0., calc_taxable_inc_before_tax - tbrk3))
     return (pitax)
 

@@ -1,6 +1,6 @@
 {
     "_rate1": {
-        "long_name": " ",
+        "long_name": " Rate for first bracket tbrk1",
         "description": " ",
         "itr_ref": " ",
         "notes": "",
@@ -25,7 +25,7 @@
         "out_of_range_action": "stop"
     },
     "_tbrk1": {
-        "long_name": " ",
+        "long_name": " First rate bracket upper bound",
         "description": " ",
         "itr_ref": " ",
         "notes": "",
@@ -50,7 +50,7 @@
         "out_of_range_action": "stop"
     },
     "_rate2": {
-        "long_name": " ",
+        "long_name": " Rate for second bracket",
         "description": " ",
         "itr_ref": " ",
         "notes": "",
@@ -75,7 +75,7 @@
         "out_of_range_action": "stop"
     },
     "_tbrk2": {
-        "long_name": " ",
+        "long_name": " Second bracket upper bound",
         "description": " ",
         "itr_ref": " ",
         "notes": "",
@@ -100,7 +100,7 @@
         "out_of_range_action": "stop"
     },
      "_rate3": {
-         "long_name": " ",
+         "long_name": " Rate for third bracket",
          "description": " ",
          "itr_ref": " ",
          "notes": "",
@@ -125,7 +125,7 @@
          "out_of_range_action": "stop"
      },
      "_tbrk3": {
-         "long_name": " ",
+         "long_name": " Third bracket upper bound",
          "description": " ",
          "itr_ref": " ",
          "notes": "",
@@ -150,7 +150,7 @@
          "out_of_range_action": "stop"
      },
      "_rate4": {
-         "long_name": " ",
+         "long_name": " Rate for fourth bracket",
          "description": " ",
          "itr_ref": " ",
          "notes": "",
@@ -174,7 +174,7 @@
          "out_of_range_maxmsg": "",
          "out_of_range_action": "stop"
      },
-_rate_ded_rent": {
+    "_rate_ded_rent": {
           "long_name": " Rate of deduction from gross rents",
           "description": " ",
           "itr_ref": " ",
@@ -199,9 +199,9 @@ _rate_ded_rent": {
           "out_of_range_maxmsg": "",
           "out_of_range_action": "stop"
       },
-"_rate_ded_charitable": {
+    "_rate_ded_charitable": {
           "long_name": " ",
-           "description": " ",
+           "description": " Rate of deduction for charitable contributions ",
            "itr_ref": " ",
            "notes": "",
            "row_var": "Year",

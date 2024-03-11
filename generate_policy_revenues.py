@@ -33,7 +33,6 @@ def read_reform_dict(block_selected_dict):
             years = years + [block_selected_dict[k]['selected_year'][0]]
     ref = {}
     ref['policy']={}
-    #print(' years ', years)
     for year in years:
         policy_dict = {}
         for k in block_selected_dict.keys():
@@ -58,10 +57,6 @@ def concat_dicts(block_selected_dict, elasticity_dict):
 
 def write_file(df, text_data, filename, window=None, footer_row_num=None):
     df.to_csv(filename+'.csv', mode='w')
-    # a = open(filename+'.csv','w')
-    # a.write("\n")
-    # a.write("\n")
-    # a.close
     with open(filename+'.txt','w') as f:
         f.write(text_data)
     f.close
@@ -122,7 +117,6 @@ def generate_policy_revenues():
 
     f = open('global_vars.json')
     global_variables = json.load(f)
-    #print('global_variables in generate policy revenues ', global_variables)
     verbose = global_variables['verbose']
     start_year = int(global_variables['start_year'])
     end_year = int(global_variables['end_year'])
@@ -150,7 +144,10 @@ def generate_policy_revenues():
         tax_collection_var_list = tax_collection_var_list + ['pitax']
         id_varlist = id_varlist + [global_variables['pit_id_var']]        
         recs = Records(data=global_variables['pit_data_filename'], weights=global_variables['pit_weights_filename'], gfactors=GrowFactors(growfactors_filename=global_variables['GROWFACTORS_FILENAME']))
-        tax_collection_var = 'pitax'
+        #tax_collection_var = 'pitax'
+        tax_collection_var = {}
+        for tax_type in tax_list:
+            tax_collection_var[tax_type] = tax_type+'ax'
     else:
         recs = None
     if global_variables['cit']:
@@ -309,7 +306,7 @@ def generate_policy_revenues():
         #print(tax_type+'_display_revenue_table')
         #print(global_variables[tax_type+'_display_revenue_table'])
     
-    #If the display revenue table is 1 (for e.g. cit_display_revenue_table = 1) in globalvars.json then create a window to show revenue table
+        #If the display revenue table is 1 (for e.g. cit_display_revenue_table = 1) in globalvars.json then create a window to show revenue table
         
         if global_variables[tax_type+'_display_revenue_table']:
             window_dict[tax_type] = tk.Toplevel()
@@ -323,7 +320,7 @@ def generate_policy_revenues():
             
             if global_variables[tax_type+'_adjust_behavior']:
                 header = header + ['Reform (Behavior)', "Diff"]
-            title_header[tax_type] = [["title", tax_type.upper()+" Projections (billions)"], header]
+            title_header[tax_type] = [["title", tax_type.upper()+" Projections (millions)"], header]
             if percent_gdp:
                 title_header[tax_type] = [["title", tax_type.upper()+" Projections (% of GDP)"], header]
             row_num[tax_type] = display_table(window_dict[tax_type], data=title_header[tax_type], header=True) #since row_index = 'title', row_num will stop at 1 in display_table func
@@ -335,7 +332,8 @@ def generate_policy_revenues():
         calc1.advance_to_year(year)
         calc2.advance_to_year(year)
         calc1.calc_all()
-        data[year] = calc1.dataframe_cit(['id_n','calc_gti', 'calc_turnover_small', 'citax', 'totax'])
+        #data[year] = calc1.dataframe_cit(['id_n','calc_gti', 'calc_turnover_small', 'citax', 'totax'])
+        data[year] = calc1.dataframe(['id_n', 'calc_total_inc', 'pitax'])
         calc2.calc_all()
        
         #print("Gini Coefficient", calc1.gini(gross_i_w))
@@ -480,27 +478,17 @@ def generate_policy_revenues():
                                                     scaling=True, attribute_var=dist_table_attribute_var)
 
             if tax_type=='pit':
-                df_tax1[tax_type][year]['All'] = calc1.dataframe([id_var, 'weight', income_measure[tax_type], tax_collection_var])
+                df_tax1[tax_type][year]['All'] = calc1.dataframe([id_var, 'weight', income_measure[tax_type], tax_collection_var[tax_type]])
                 df_tax1[tax_type][year]['All'].set_index(id_var)
-                df_tax2[tax_type][year]['All'] = calc2.dataframe([id_var, 'weight', income_measure[tax_type], tax_collection_var])
+                df_tax2[tax_type][year]['All'] = calc2.dataframe([id_var, 'weight', income_measure[tax_type], tax_collection_var[tax_type]])
                 df_tax2[tax_type][year]['All'].set_index(id_var)
             elif tax_type=='cit':
-                # distribution_json_filename[tax_type] = 'taxcalc/'+global_variables[tax_type+'_distribution_json_filename']
-                # f = open(distribution_json_filename[tax_type])
-                # distribution_vardict_dict[tax_type] = json.load(f)
-                # income_measure = distribution_vardict_dict['cit']['income_measure']
                 df_tax1[tax_type][year]['All'] = calc1.dataframe_cit([id_var, 'weight', income_measure[tax_type], tax_collection_var[tax_type]])
-                #print('df_tax1', df_tax1)
                 df_tax1[tax_type][year]['All'].set_index(id_var)
                 df_tax2[tax_type][year]['All'] = calc2.dataframe_cit([id_var, 'weight', income_measure[tax_type], tax_collection_var[tax_type]])
                 df_tax2[tax_type][year]['All'].set_index(id_var)
             elif tax_type=='tot':
-                # distribution_json_filename[tax_type] = 'taxcalc/'+global_variables[tax_type+'_distribution_json_filename']
-                # f = open(distribution_json_filename[tax_type])
-                # distribution_vardict_dict[tax_type] = json.load(f)
-                # income_measure = distribution_vardict_dict['tot']['income_measure']
                 df_tax1[tax_type][year]['All'] = calc1.dataframe_cit([id_var, 'weight', income_measure[tax_type], tax_collection_var[tax_type]])
-                #print('df_tax1', df_tax1)
                 df_tax1[tax_type][year]['All'].set_index(id_var)
                 df_tax2[tax_type][year]['All'] = calc2.dataframe_cit([id_var, 'weight', income_measure[tax_type], tax_collection_var[tax_type]])
                 df_tax2[tax_type][year]['All'].set_index(id_var)
@@ -513,25 +501,20 @@ def generate_policy_revenues():
         #print('df_tax1', df_tax1)
     for year in range(data_start_year, end_year+1):
         dfcalc = data.get(year)     
-        dfcalc.to_csv('output'+ '{}'.format(year) + '.csv')
+        dfcalc.to_csv('{}'.format(tax_type) + '_output'+ '{}'.format(year) + '.csv')
 
     def calc_gini(df_tax12, tax_type):
         """
         Return gini.
         """
-
-        df_tax12[tax_type]['All']['weight'] = df_tax12[tax_type]['All']['weight'+'_'+str(start_year)]
-        df_tax12[tax_type]['All']['pre_tax_income'] = df_tax12[tax_type]['All'][income_measure[tax_type]+'_'+str(start_year)]        
-        df_tax12[tax_type]['All']['pitax_current_law'] = df_tax12[tax_type]['All'][tax_collection_var[tax_type]+'_'+str(start_year)]
-        df_tax12[tax_type]['All']['pitax_reform'] = df_tax12[tax_type]['All'][tax_collection_var[tax_type]+'_ref_'+str(start_year)]   
         gini = pd.DataFrame()
-        gini['weight'] = df_tax12[tax_type]['All']['weight']
-        gini['pre_tax_income'] = df_tax12[tax_type]['All']['pre_tax_income']
-        gini['pitax_current_law'] = df_tax12[tax_type]['All']['pitax_current_law']
-        gini['pitax_reform'] = df_tax12[tax_type]['All']['pitax_reform']
-        
+        gini['weight'] = df_tax12['All']['weight'+'_'+str(start_year)]
+        gini['pre_tax_income'] =abs(df_tax12['All'][income_measure[tax_type]+'_'+str(start_year)])
+        gini['pitax_current_law'] = df_tax12['All'][tax_collection_var[tax_type]+'_'+str(start_year)]
+        gini['pitax_reform'] = df_tax12['All'][tax_collection_var[tax_type]+'_ref_'+str(start_year)]  
+
         #gini.to_csv('df_for_gini.csv', index=False)
-        #print('df ', df)
+        #print('gini ', gini)
         varlist = ['pre_tax_income', 'pitax_current_law', 'pitax_reform']
         kakwani_list = []
         gini= gini.sort_values(by='pre_tax_income')
@@ -550,6 +533,7 @@ def generate_policy_revenues():
         # 45 degree line means that the "Y Value" is the same as the
         # the "X Value" i.e. gini['percentage_cumul_pop']
         gini['height'] = gini['percentage_cumul_pop']-gini['percentage_cumul_income']
+        print('gini ', gini)
         # We insert a zero row in the beginning inorder to have a reading 
         # for the origin (0,0) of the Lorenz curve 
         gini1 = pd.DataFrame([[np.nan]*len(gini.columns)], columns=gini.columns)
@@ -689,6 +673,7 @@ def generate_policy_revenues():
         #for tax_coll_var in tax_collection_var:
         # for tax_type in tax_list:
         df_tax12 = merge_distribution_table_dicts(df_tax1, df_tax2, tax_type, data_start_year, end_year)  
+        print('df_tax12 in gini function is', df_tax12)
         dt12 = merge_distribution_table_dicts(dt1, dt2, tax_type, data_start_year, end_year)
         dt34 = merge_distribution_table_dicts(dt3, dt4, tax_type, data_start_year, end_year)
         dt_percentile = merge_distribution_table_dicts(dt1_percentile, dt2_percentile, tax_type, data_start_year, end_year)
@@ -722,9 +707,9 @@ def generate_policy_revenues():
     
         dt_tax_all12 = dt_tax_all12.reset_index()
         dt_tax_all34 = dt_tax_all34.reset_index()
+        #dt_tax_all12.head().style.format("{:,.0f}") 
+        #dt_tax_all34.head().style.format("{:,.0f}")
         
-        #print('dt_tax_all34', dt_tax_all34)
-    
         # dt_tax_all12 = pd.DataFrame.from_dict(dt_tax_all12[tax_type])
         # dt_tax_all12.insert(0, 'Dist_var', dt_tax_all12.index)
         # dt_tax_all34 = pd.DataFrame.from_dict(dt_tax_all34[tax_type])
@@ -768,7 +753,7 @@ def generate_policy_revenues():
             for year in range(start_year, end_year+1):
                 header1 = header1+[tax_type.upper()]                    
                 header2 = header2+['Reform '+str(year)]          
-            title_header = [["title", tax_type.upper()+" Contribution by Income Groups (fig in millions)"],
+            title_header = [["title", tax_type.upper()+" Contribution by Income Groups (fig in Euros)"],
                             header1, header2]
             row_num[tax_type] = display_table(window_dist[tax_type], data=title_header, header=True)
             row_num[tax_type] = display_table(window_dist[tax_type], row = row_num[tax_type], dataframe=dt_tax_all34)
@@ -778,13 +763,13 @@ def generate_policy_revenues():
         elif global_variables[tax_type+'_display_distribution_table_bydecile']:
             window_dist[tax_type] = tk.Toplevel()
             window_dist[tax_type].geometry("1000x700+600+140")
-            header1 = ["header","", tax_type.upper()+' (LCU)']
+            header1 = ["header","", tax_type.upper()+' (Euros)']
             header2 = ["header",'Decile']
             for year in range(data_start_year, start_year+1):
-                header1 = header1+[tax_type.upper()+' (LCU)']
+                header1 = header1+[tax_type.upper()+' (Euros)']
                 header2 = header2+['Current Law '+str(year)]                    
             for year in range(start_year, end_year+1):
-                header1 = header1+[tax_type.upper()+' (LCU)']                    
+                header1 = header1+[tax_type.upper()+' (Euros)']                    
                 header2 = header2+['Reform '+str(year)]          
             title_header = [["title", tax_type.upper()+" Tax Liability - Distribution by Deciles"],
                             header1, header2]     
@@ -793,28 +778,17 @@ def generate_policy_revenues():
             l = tk.Button(window_dist[tax_type],text="Save Results",command=lambda: write_file(dt_tax_all12, text_output2, filename2, window_dist[tax_type], row_num[tax_type]))
             l.grid(row=row_num[tax_type]+2, column=2, pady = 10, sticky=tk.W)
         return kakwani_list
-        #return None
-    #tax_type = tax_list[0]
-    #print(tax_type)
-    #print(global_variables[tax_type+'_distribution_table'])
-    #kakwani_list = {}
+        
     for tax_type in tax_list:
         if global_variables[tax_type+'_distribution_table']:
-            #kakwani_list[tax_type] = display_distribution_table_window(tax_type)
             kakwani_list = display_distribution_table_window(tax_type)
-            print('kakwani', kakwani_list)
-        # #for tax_type in [tax_list[0]]:
-        # for tax_type in tax_list:
             global_variables[tax_type +'_display_revenue_table'] = 1
             chart_list = chart_list + [tax_type+'_distribution_table']
             chart_list = chart_list + [tax_type+'_distribution_table_top1']
             chart_list = chart_list + [tax_type+'_distribution_table_income_bins']
             chart_list = chart_list + [tax_type+'_etr']
-            #global_variables['kakwani_list'+tax_type] = kakwani_list[tax_type]
             global_variables['kakwani_list'] = kakwani_list
-            
-            
-            
+                 
     global_variables['charts_ready'] = 1
     print('chart_list ', chart_list)
     global_variables['chart_list'] = chart_list
@@ -822,8 +796,7 @@ def generate_policy_revenues():
     with open('global_vars.json', 'w') as f:        
         f.write(json.dumps(global_variables, indent=2))
     
-    #pt = Table(f, dataframe=dt,
-       #showtoolbar=True, showstatusbar=True)
+
         
 
        

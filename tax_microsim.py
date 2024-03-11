@@ -363,8 +363,6 @@ class Application(tk.Frame):
         #print('length block_widget_dict ', len(self.block_widget_dict))
         num_changes = len(widget_dict)
         self.selected_attribute_widget
-        #print(widget_dict)
-        #print('num_changes ', num_changes)
         for num in range(1, num_changes+1):
             #print('num ', num)
             selected_item = widget_dict[num][1].get()
@@ -409,36 +407,37 @@ class Application(tk.Frame):
         if global_vars['show_error_log']:
             self.logger.clear()
         self.verbose = global_vars['verbose']
+        ''' Turn the counter to 1 based on the distribution table '''
         if run_type=='dist_by_decile':
             self.vars[self.tax_type+'_display_distribution_table_bydecile'] = 1
             self.vars[self.tax_type+'_display_distribution_table_byincome'] = 0
             self.vars[self.tax_type+'_display_revenue_table'] = 0
-            self.vars['sst'+'_display_revenue_table'] = 0
             self.vars[self.tax_type+'_distribution_table'] = 1
-            self.vars['tot'+'_display_revenue_table'] = 0
+            self.vars['sst'+'_display_revenue_table'] = 0
             self.vars['tot'+'_display_distribution_table_bydecile'] = 1
             self.vars['tot'+'_display_distribution_table_byincome'] = 0
+            self.vars['tot'+'_display_revenue_table'] = 0
             self.vars['tot'+'_distribution_table'] = 1
         elif run_type=='dist_by_income':
             self.vars[self.tax_type+'_display_distribution_table_bydecile'] = 0
             self.vars[self.tax_type+'_display_distribution_table_byincome'] = 1
             self.vars[self.tax_type+'_display_revenue_table'] = 0
-            self.vars['sst'+'_display_revenue_table'] = 0
             self.vars[self.tax_type+'_distribution_table'] = 1
-            self.vars['tot'+'_display_revenue_table'] = 0
+            self.vars['sst'+'_display_revenue_table'] = 0
             self.vars['tot'+'_display_distribution_table_bydecile'] = 0
             self.vars['tot'+'_display_distribution_table_byincome'] = 1
+            self.vars['tot'+'_display_revenue_table'] = 0
             self.vars['tot'+'_distribution_table'] = 1
         #elif run_type == 'rev_behavior':
         else:
             self.vars[self.tax_type+'_display_distribution_table_bydecile'] = 0
-            self.vars[self.tax_type+'_display_distribution_table'] = 0
+            self.vars[self.tax_type+'_display_distribution_table_byincome'] = 0
             self.vars[self.tax_type+'_display_revenue_table'] = 1
-            self.vars['sst'+'_display_revenue_table'] = 1            
             self.vars[self.tax_type+'_distribution_table'] = 0
-            self.vars['tot'+'_display_revenue_table'] = 1
+            self.vars['sst'+'_display_revenue_table'] = 1  
             self.vars['tot'+'_display_distribution_table_bydecile'] = 0
             self.vars['tot'+'_display_distribution_table_byincome'] = 0
+            self.vars['tot'+'_display_revenue_table'] = 1
             self.vars['tot'+'_distribution_table'] = 0
         self.save_inputs()
 
@@ -530,18 +529,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-    #main()
-
     
-    
-"""
-    
-    #Button(self.TAB2, row=6, column=1, sticky = W, pady = (0,25), padx = (0,0))
-    root.mainloop()
-
-if __name__ == "__main__":
-    app = Application()
-    app.master.title("Sample application")
-    app.mainloop()
-    
- """   
